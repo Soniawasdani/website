@@ -1,0 +1,1443 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script
+    type="text/javascript">(window.NREUM || (NREUM = {})).loader_config = { licenseKey: "581f614197", applicationID: "55667040" }; window.NREUM || (NREUM = {}), __nr_require = function (e, n, t) { function r(t) { if (!n[t]) { var i = n[t] = { exports: {} }; e[t][0].call(i.exports, function (n) { var i = e[t][1][n]; return r(i || n) }, i, i.exports) } return n[t].exports } if ("function" == typeof __nr_require) return __nr_require; for (var i = 0; i < t.length; i++)r(t[i]); return r }({ 1: [function (e, n, t) { function r() { } function i(e, n, t) { return function () { return o(e, [u.now()].concat(f(arguments)), n ? null : this, t), n ? void 0 : this } } var o = e("handle"), a = e(4), f = e(5), c = e("ee").get("tracer"), u = e("loader"), s = NREUM; "undefined" == typeof window.newrelic && (newrelic = s); var p = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], l = "api-", d = l + "ixn-"; a(p, function (e, n) { s[n] = i(l + n, !0, "api") }), s.addPageAction = i(l + "addPageAction", !0), s.setCurrentRouteName = i(l + "routeName", !0), n.exports = newrelic, s.interaction = function () { return (new r).get() }; var m = r.prototype = { createTracer: function (e, n) { var t = {}, r = this, i = "function" == typeof n; return o(d + "tracer", [u.now(), e, t], r), function () { if (c.emit((i ? "" : "no-") + "fn-start", [u.now(), r, i], t), i) try { return n.apply(this, arguments) } catch (e) { throw c.emit("fn-err", [arguments, this, e], t), e } finally { c.emit("fn-end", [u.now()], t) } } } }; a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (e, n) { m[n] = i(d + n) }), newrelic.noticeError = function (e, n) { "string" == typeof e && (e = new Error(e)), o("err", [e, u.now(), !1, n]) } }, {}], 2: [function (e, n, t) { function r(e, n) { var t = e.getEntries(); t.forEach(function (e) { "first-paint" === e.name ? c("timing", ["fp", Math.floor(e.startTime)]) : "first-contentful-paint" === e.name && c("timing", ["fcp", Math.floor(e.startTime)]) }) } function i(e, n) { var t = e.getEntries(); t.length > 0 && c("lcp", [t[t.length - 1]]) } function o(e) { if (e instanceof s && !l) { var n, t = Math.round(e.timeStamp); n = t > 1e12 ? Date.now() - t : u.now() - t, l = !0, c("timing", ["fi", t, { type: e.type, fid: n }]) } } if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) { var a, f, c = e("handle"), u = e("loader"), s = NREUM.o.EV; if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) { a = new PerformanceObserver(r), f = new PerformanceObserver(i); try { a.observe({ entryTypes: ["paint"] }), f.observe({ entryTypes: ["largest-contentful-paint"] }) } catch (p) { } } if ("addEventListener" in document) { var l = !1, d = ["click", "keydown", "mousedown", "pointerdown", "touchstart"]; d.forEach(function (e) { document.addEventListener(e, o, !1) }) } } }, {}], 3: [function (e, n, t) { function r(e, n) { if (!i) return !1; if (e !== i) return !1; if (!n) return !0; if (!o) return !1; for (var t = o.split("."), r = n.split("."), a = 0; a < r.length; a++)if (r[a] !== t[a]) return !1; return !0 } var i = null, o = null, a = /Version\/(\S+)\s+Safari/; if (navigator.userAgent) { var f = navigator.userAgent, c = f.match(a); c && f.indexOf("Chrome") === -1 && f.indexOf("Chromium") === -1 && (i = "Safari", o = c[1]) } n.exports = { agent: i, version: o, match: r } }, {}], 4: [function (e, n, t) { function r(e, n) { var t = [], r = "", o = 0; for (r in e) i.call(e, r) && (t[o] = n(r, e[r]), o += 1); return t } var i = Object.prototype.hasOwnProperty; n.exports = r }, {}], 5: [function (e, n, t) { function r(e, n, t) { n || (n = 0), "undefined" == typeof t && (t = e ? e.length : 0); for (var r = -1, i = t - n || 0, o = Array(i < 0 ? 0 : i); ++r < i;)o[r] = e[n + r]; return o } n.exports = r }, {}], 6: [function (e, n, t) { n.exports = { exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart } }, {}], ee: [function (e, n, t) { function r() { } function i(e) { function n(e) { return e && e instanceof r ? e : e ? c(e, f, o) : o() } function t(t, r, i, o) { if (!l.aborted || o) { e && e(t, r, i); for (var a = n(i), f = v(t), c = f.length, u = 0; u < c; u++)f[u].apply(a, r); var p = s[y[t]]; return p && p.push([b, t, r, a]), a } } function d(e, n) { h[e] = v(e).concat(n) } function m(e, n) { var t = h[e]; if (t) for (var r = 0; r < t.length; r++)t[r] === n && t.splice(r, 1) } function v(e) { return h[e] || [] } function g(e) { return p[e] = p[e] || i(t) } function w(e, n) { u(e, function (e, t) { n = n || "feature", y[t] = n, n in s || (s[n] = []) }) } var h = {}, y = {}, b = { on: d, addEventListener: d, removeEventListener: m, emit: t, get: g, listeners: v, context: n, buffer: w, abort: a, aborted: !1 }; return b } function o() { return new r } function a() { (s.api || s.feature) && (l.aborted = !0, s = l.backlog = {}) } var f = "nr@context", c = e("gos"), u = e(4), s = {}, p = {}, l = n.exports = i(); l.backlog = s }, {}], gos: [function (e, n, t) { function r(e, n, t) { if (i.call(e, n)) return e[n]; var r = t(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, n, { value: r, writable: !0, enumerable: !1 }), r } catch (o) { } return e[n] = r, r } var i = Object.prototype.hasOwnProperty; n.exports = r }, {}], handle: [function (e, n, t) { function r(e, n, t, r) { i.buffer([e], r), i.emit(e, n, t) } var i = e("ee").get("handle"); n.exports = r, r.ee = i }, {}], id: [function (e, n, t) { function r(e) { var n = typeof e; return !e || "object" !== n && "function" !== n ? -1 : e === window ? 0 : a(e, o, function () { return i++ }) } var i = 1, o = "nr@id", a = e("gos"); n.exports = r }, {}], loader: [function (e, n, t) { function r() { if (!x++) { var e = E.info = NREUM.info, n = d.getElementsByTagName("script")[0]; if (setTimeout(s.abort, 3e4), !(e && e.licenseKey && e.applicationID && n)) return s.abort(); u(y, function (n, t) { e[n] || (e[n] = t) }), c("mark", ["onload", a() + E.offset], null, "api"); var t = d.createElement("script"); t.src = "https://" + e.agent, n.parentNode.insertBefore(t, n) } } function i() { "complete" === d.readyState && o() } function o() { c("mark", ["domContent", a() + E.offset], null, "api") } function a() { return O.exists && performance.now ? Math.round(performance.now()) : (f = Math.max((new Date).getTime(), f)) - E.offset } var f = (new Date).getTime(), c = e("handle"), u = e(4), s = e("ee"), p = e(3), l = window, d = l.document, m = "addEventListener", v = "attachEvent", g = l.XMLHttpRequest, w = g && g.prototype; NREUM.o = { ST: setTimeout, SI: l.setImmediate, CT: clearTimeout, XHR: g, REQ: l.Request, EV: l.Event, PR: l.Promise, MO: l.MutationObserver }; var h = "" + location, y = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-1167.min.js" }, b = g && w && w[m] && !/CriOS/.test(navigator.userAgent), E = n.exports = { offset: f, now: a, origin: h, features: {}, xhrWrappable: b, userAgent: p }; e(1), e(2), d[m] ? (d[m]("DOMContentLoaded", o, !1), l[m]("load", r, !1)) : (d[v]("onreadystatechange", i), l[v]("onload", r)), c("mark", ["firstbyte", f], null, "api"); var x = 0, O = e(6) }, {}], "wrap-function": [function (e, n, t) { function r(e) { return !(e && e instanceof Function && e.apply && !e[a]) } var i = e("ee"), o = e(5), a = "nr@original", f = Object.prototype.hasOwnProperty, c = !1; n.exports = function (e, n) { function t(e, n, t, i) { function nrWrapper() { var r, a, f, c; try { a = this, r = o(arguments), f = "function" == typeof t ? t(r, a) : t || {} } catch (u) { l([u, "", [r, a, i], f]) } s(n + "start", [r, a, i], f); try { return c = e.apply(a, r) } catch (p) { throw s(n + "err", [r, a, p], f), p } finally { s(n + "end", [r, a, c], f) } } return r(e) ? e : (n || (n = ""), nrWrapper[a] = e, p(e, nrWrapper), nrWrapper) } function u(e, n, i, o) { i || (i = ""); var a, f, c, u = "-" === i.charAt(0); for (c = 0; c < n.length; c++)f = n[c], a = e[f], r(a) || (e[f] = t(a, u ? f + i : i, o, f)) } function s(t, r, i) { if (!c || n) { var o = c; c = !0; try { e.emit(t, r, i, n) } catch (a) { l([a, t, r, i]) } c = o } } function p(e, n) { if (Object.defineProperty && Object.keys) try { var t = Object.keys(e); return t.forEach(function (t) { Object.defineProperty(n, t, { get: function () { return e[t] }, set: function (n) { return e[t] = n, n } }) }), n } catch (r) { l([r]) } for (var i in e) f.call(e, i) && (n[i] = e[i]); return n } function l(n) { try { e.emit("internal-error", n) } catch (t) { } } return e || (e = i), t.inPlace = u, t.flag = a, t } }, {}] }, {}, ["loader"]);</script>
+  <meta name="google-site-verification" content="J_xomjj4rfDA-fOSaht7A4E-FmnUgb59sR5ovD9KUho" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="shortcut icon" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="shortcut icon" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="manifest" href="../manifest.json" />
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#bf5700" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-title" content="UT Austin" />
+  <title>Mission &amp; Values | The University of Texas at Austin</title>
+  <link type="text/css" rel="stylesheet"
+    href="../sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+  <link type="text/css" rel="stylesheet"
+    href="../sites/default/files/css/css_LLUkgZe1NzbJqDdxDkGt-NZG8av8aA9KnGet29ozZt0.css" media="all" />
+  <link type="text/css" rel="stylesheet"
+    href="../sites/default/files/css/css_bi8q_X2h09r9lTIBNO9_lPsiBtmkHI_SBZLyLTlmnFo.css" media="all" />
+  <link type="text/css" rel="stylesheet"
+    href="../sites/default/files/css/css_JLt8Br4AW3qMH-kqlicO_Qn8YqYzDTL2yoEChVHnNpE.css" media="all" />
+  <link type="text/css" rel="stylesheet"
+    href="../sites/default/files/css/css_GINGAjXhXmeeu1mkHb89KAZ5vP-2AThuCrPcXQ_RBOY.css" media="print" />
+  <link type="text/css" rel="stylesheet" href="../sites/default/files/css/isalmic.css">
+  <script type="text/javascript"
+    src="../sites/default/files/js/js_skqGD_-bJjRAp8bjfSpH335pTTaQswUTeJunDNYVCxQ.js"></script>
+</head>
+<div class="overall">
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-79 node-type-page">
+  <div id="skip-link">
+    <a accesskey="C" href="#ut-page-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+  <header class="UT-header">
+    <div class="container container-logo">
+      <div class="row">
+        <div class="column small-12">
+          <div class="UT-logo"><a href="../index.html" class="UT-logo-link"><span class="hiddenText">The University of
+                Texas at Austin</span></a></div>
+        </div>
+      </div>
+      <a href="#" class="UT-nav-hamburger icon-menu" id="menu-icon"><span class="hiddenText">Menu</span></a>
+    </div> <!-- /logo -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+    <div class="nav-wrapper">
+      <div class="container container-topnav">
+        <div class="row">
+          <div class="column small-12">
+            <div class="topnav" role="navigation">
+              <p class="hiddenText">Header Helpful Links</p><ul class="topnav-constituents"><li class="nav-item"><a href="../student-resources.html" title="" class="nav-link">Current Students</a></li>
+<li class="nav-item"><a href="../faculty-and-staff-resources.html" class="nav-link">Faculty &amp; Staff</a></li>
+<li class="nav-item"><a href="../alumni-resources.html" class="nav-link">Alumni</a></li>
+<li class="nav-item"><a href="../visitor-resources.html" title="" class="nav-link">Families &amp; Visitors</a></li>
+</ul>              <ul class="topnav-links">
+                <li class="nav-item nav-item-search hide-for-large-up">
+                  <div class="nav-search-container">
+                    <label for='search-mobile' class='hiddenText' id='mobileSearchLabel'>Search</label><div class='nav-search-container'>
+  <form action='https://www.utexas.edu/search/results' method='get' id='cse_mobile_searchbox' class='cse_searchbox'>
+    <input type='text' name='query'  placeholder='Search' class='nav-search-input' title='Search this site' aria-labelledby='mobileSearchLabel'>
+    <button class='nav-search-button'><span class='hiddenText'>Search</span><span class='icon-search'></span></button>
+  </form></div>                  </div>
+                </li>
+                <li class="nav-item nav-item-info first"><a href="http://maps.utexas.edu/" title="" class="nav-link">Maps</a></li>
+<li class="nav-item nav-item-info mid"><a href="../directory/index.html" title="" class="nav-link">Directory</a></li>
+<li class="nav-item nav-item-info last"><a href="https://utdirect.utexas.edu/" title="" class="nav-link">UT Direct</a></li>
+                <li class="nav-item nav-item-button"><a href="https://giving.utexas.edu/" title="" class="nav-link nav-link-button">Give</a></li>
+<li class="nav-item nav-item-button"><a href="../apply.html" class="nav-link nav-link-button">Apply</a></li>
+                <li class="nav-item nav-item-search show-for-large-up">
+                  <div class="nav-search-container">
+                    <label for='search-desktop' class='hiddenText' id='desktopSearchLabel'>Search</label><div class='nav-search-container'>
+  <form action='https://www.utexas.edu/search/results' method='get' id='cse_desktop_searchbox' class='cse_searchbox'>
+    <input type='text' name='query'  placeholder='Search' class='nav-search-input' title='Search this site' aria-labelledby='desktopSearchLabel'>
+    <button class='nav-search-button'><span class='hiddenText'>Search</span><span class='icon-search'></span></button>
+  </form></div>                  </div>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- /topnav -->
+    <div class="container container-nav">
+      <div class="row">
+        <div class="column small-12">
+          <nav role="navigation">
+            <ul class="nav" id="main-nav">
+              <li class="nav-item">
+                <a href="#part7" class="nav-link " style="font-size: 20px;">
+                  ادارہ تعلیمات
+                </a> </li>
+              <li class="nav-item">
+                <a href="#part6" class="nav-link " style="font-size: 20px;">
+                  جامعہ کی شاخیں
+                </a> </li>
+              <li class="nav-item">
+                <a href="#part5" class="nav-link " style="font-size: 20px;">
+                  فاروقیہ خدمات </a> </li>
+              <li class="nav-item">
+                <a href="#part4" class="nav-link " style="font-size: 20px;">
+                  ادارہ الفاروق کراچی
+                </a> </li>
+              <li class="nav-item">
+                <a href="#part3" class="nav-link " style="font-size: 20px;">
+                  شعبہ جات جامعہ
+                </a> </li>
+              <li class="nav-item">
+                <a href="#part2" class="nav-link " style="font-size: 20px;">تعارف جامعہ</a> </li>
+
+
+
+
+
+              <!-- <li class="nav-item">
+        <a href="#" class="nav-link has-child nolink">Academics</a>                  <div class="sub-nav-wrapper">
+            <div class="sub-nav-row">
+                                          <ul class="sub-nav">
+                                                      <li class="sub-nav-item">
+                      <a href="../academics/academic-experience.html" class="sub-nav-link"><span>Academic Experience</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../academics/areas-of-study.html" class="sub-nav-link"><span>Areas of Study</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://extendedcampus.utexas.edu/" class="sub-nav-link"><span>Extended Campus</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://www.engr.utexas.edu/" class="sub-nav-link"><span>Cockrell School of Engineering</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://education.utexas.edu/" class="sub-nav-link"><span>College of Education</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://finearts.utexas.edu/" class="sub-nav-link"><span>College of Fine Arts</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://liberalarts.utexas.edu/" class="sub-nav-link"><span>College of Liberal Arts</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://cns.utexas.edu/" class="sub-nav-link"><span>College of Natural Sciences</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://pharmacy.utexas.edu/" class="sub-nav-link"><span>College of Pharmacy</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://dellmed.utexas.edu/" class="sub-nav-link"><span>Dell Medical School</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://gradschool.utexas.edu/" class="sub-nav-link"><span>Graduate School</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://www.jsg.utexas.edu/" class="sub-nav-link"><span>Jackson School of Geosciences</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://lbj.utexas.edu/" class="sub-nav-link"><span>LBJ School of Public Affairs</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://www.mccombs.utexas.edu/" class="sub-nav-link"><span>McCombs School of Business</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://moody.utexas.edu/" class="sub-nav-link"><span>Moody College of Communication</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://soa.utexas.edu/" class="sub-nav-link"><span>School of Architecture</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://www.ischool.utexas.edu/" class="sub-nav-link"><span>School of Information</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://law.utexas.edu/" class="sub-nav-link"><span>School of Law</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://nursing.utexas.edu/" class="sub-nav-link"><span>School of Nursing</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://socialwork.utexas.edu/" class="sub-nav-link"><span>Steve Hicks School of Social Work</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="https://ugs.utexas.edu/" class="sub-nav-link"><span>School of Undergraduate Studies</span></a>                    </li>
+                                                                                                                    </ul>
+            </div>
+          </div>
+              </li>
+                <li class="nav-item">
+        <a href="#" class="nav-link has-child nolink">Admissions &amp; Aid</a>                  <div class="sub-nav-wrapper">
+            <div class="sub-nav-row">
+                                              <div class="sub-nav-feature show-for-large-up">
+          <div class="feature-image">
+        <img class="utexas-flex-content-area-image" typeof="foaf:Image" src="../sites/default/files/styles/menu_content_block/public/utexas_menu_block/admissions_menucontentblock14a7.jpg?itok=4IkKoPxN" alt="Image of a happy Long Horn student holding a Longhorn banner." />      </div>
+        <div class="feature-content">
+      <h3 class="feature-headline">Be a Longhorn</h3>
+      <div class="feature-text"><p><em>What Starts Here Changes the World.</em> It's more than a motto. It’s what we prove each and every day, as Texas and its Exes advance discovery and innovation on a global stage. Join us.&nbsp;</p>
+</div>
+          </div>
+  </div>
+                            <ul class="sub-nav sub-nav-has-feature">
+                                                      <li class="sub-nav-item">
+                      <a href="http://admissions.utexas.edu/" class="sub-nav-link"><span>Undergraduate Admissions</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://gradschool.utexas.edu/admissions" class="sub-nav-link"><span>Graduate Admissions</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://law.utexas.edu/admissions/" class="sub-nav-link"><span>School of Law Admissions</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://dellmedschool.utexas.edu/prospective-students" class="sub-nav-link"><span>Dell Medical School Admissions</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://admissions.utexas.edu/tuition" class="sub-nav-link"><span>Tuition &amp; Costs</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://finaid.utexas.edu/" class="sub-nav-link"><span>Financial Aid</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://admissions.utexas.edu/visit" class="sub-nav-link"><span>Campus Visits</span></a>                    </li>
+                                                                                                                    </ul>
+            </div>
+          </div>
+              </li>
+                <li class="nav-item">
+        <a href="#" class="nav-link has-child nolink">Campus &amp; Community</a>                  <div class="sub-nav-wrapper">
+            <div class="sub-nav-row">
+                                              <div class="sub-nav-feature show-for-large-up">
+          <div class="feature-image">
+        <img class="utexas-flex-content-area-image" typeof="foaf:Image" src="../sites/default/files/styles/menu_content_block/public/utexas_menu_block/towerandstudents_menucontentblock007e.jpg?itok=trvj8GYC" alt="Students walking along the steps in front of the Tower on a sunny day." />      </div>
+        <div class="feature-content">
+      <h3 class="feature-headline">Explore Your Passions</h3>
+      <div class="feature-text"><p>Thousands of events, from concerts and film screenings to readings&nbsp;and lectures.&nbsp;More than 1,100 student organizations. Incredible facilities and special attractions. And it's all set in the heart of one of the&nbsp;world's greatest cities. Welcome home.</p>
+</div>
+          </div>
+  </div>
+                            <ul class="sub-nav sub-nav-has-feature">
+                                                      <li class="sub-nav-item">
+                      <a href="../campus-life/arts-and-culture.html" class="sub-nav-link"><span>Arts &amp; Culture</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../campus-life/campus-destinations.html" class="sub-nav-link"><span>Campus Destinations</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../campus-life/entrepreneurship-and-innovation.html" class="sub-nav-link"><span>Entrepreneurship &amp; Innovation</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../campus-life/health-and-wellness.html" class="sub-nav-link"><span>Health &amp; Wellness</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../campus-life/housing-and-dining.html" class="sub-nav-link"><span>Housing &amp; Dining</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../campus-life/life-in-austin.html" class="sub-nav-link"><span>Life in Austin</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../campus-life/report-misconduct.html" class="sub-nav-link"><span>Report Misconduct</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../campus-life/safety-and-security.html" class="sub-nav-link"><span>Safety &amp; Security</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../campus-life/student-involvement.html" class="sub-nav-link"><span>Student Involvement</span></a>                    </li>
+                                                                                                                    </ul>
+            </div>
+          </div>
+              </li>
+                <li class="nav-item">
+        <a href="#" class="nav-link has-child nolink">Research</a>                  <div class="sub-nav-wrapper">
+            <div class="sub-nav-row">
+                                              <div class="sub-nav-feature show-for-large-up">
+          <div class="feature-image">
+        <img class="utexas-flex-content-area-image" typeof="foaf:Image" src="../sites/default/files/styles/menu_content_block/public/utexas_menu_block/researcher_menucontentblock23a6.jpg?itok=trPZejP9" alt="Young female research student filling trays of samples to be processed." />      </div>
+        <div class="feature-content">
+      <h3 class="feature-headline">Change the World</h3>
+      <div class="feature-text"><p>Longhorns are passionate about making the world a better place, united by the&nbsp;belief that creating and sharing&nbsp;knowledge can save lives and transform society. Come explore our vast research enterprise — or better yet, create, innovate and discover with us.</p>
+</div>
+          </div>
+  </div>
+                            <ul class="sub-nav sub-nav-has-feature">
+                                                      <li class="sub-nav-item">
+                      <a href="../research/overview.html" class="sub-nav-link"><span>Overview</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../research/student-research.html" class="sub-nav-link"><span>Student Research</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../research/units-and-centers.html" class="sub-nav-link"><span>Units &amp; Centers</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../research/off-campus-research-sites.html" class="sub-nav-link"><span>Off-Campus Research Sites</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="../research/libraries.html" class="sub-nav-link"><span>Libraries</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://experts.utexas.edu/" class="sub-nav-link"><span>Experts Guide</span></a>                    </li>
+                                                                                                                    </ul>
+            </div>
+          </div>
+              </li>
+                <li class="nav-item">
+        <a href="#" class="nav-link has-child nolink">Athletics</a>                  <div class="sub-nav-wrapper">
+            <div class="sub-nav-row">
+                                              <div class="sub-nav-feature show-for-large-up">
+          <div class="feature-image">
+        <img class="utexas-flex-content-area-image" typeof="foaf:Image" src="../sites/default/files/styles/menu_content_block/public/utexas_menu_block/basketballfans_menucontentblock_v3_03210.jpg?itok=I024hE6Y" alt="Longhorns fans cheering for the team in a packed stadium." />      </div>
+        <div class="feature-content">
+      <h3 class="feature-headline">Get Your Horns Up</h3>
+      <div class="feature-text"><p>There’s no better time to show your true colors than at one of our many sporting events.&nbsp;Put on some&nbsp;burnt orange, raise your Horns high and&nbsp;join Longhorn Nation&nbsp;in a "Texas Fight" chant. It's game time.</p>
+</div>
+          </div>
+  </div>
+                            <ul class="sub-nav sub-nav-has-feature">
+                                                      <li class="sub-nav-item">
+                      <a href="../athletics/overview.html" class="sub-nav-link"><span>Overview</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://www.texassports.com/" class="sub-nav-link"><span>TexasSports.com</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://ev9.evenue.net/cgi-bin/ncommerce3/EVExecMacro?linkID=tex-ath&amp;evm=main" class="sub-nav-link"><span>Ticket Office</span></a>                    </li>
+                                                                        <li class="sub-nav-item">
+                      <a href="http://shop.texassports.com/" class="sub-nav-link"><span>Texas Longhorns Official Shop</span></a>                    </li>
+                                                                                                                    </ul>
+            </div>
+          </div>
+              </li>
+                <li class="nav-item">
+        <a href="https://news.utexas.edu/" class="nav-link ">News</a>              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <div class="UT-page" id="ut-page-content" role="main">
+    <div class="container container-top   search">
+      <div class="row">
+        <div class="column small-12 show-for-medium-up">
+          <ul class="breadcrumbs">
+            <li class="first"><a href="../Urdu.html">Home</a></li>
+            <li class="current last">About : Mission &amp; Values</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-tabs row">
+        <div class="column small-12">
+        </div>
+      </div>
+
+      <div class="field_its_view_reference"></div>
+      <div class="field_timely_view_reference"></div>
+      <div class="row">
+        <div class="column medium-centered medium-10 large-9 aligncentre">
+          <h1 style="text-align: right;">تعارف حضرت شیخ الحدیث بانی ٴجامعہ</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column medium-centered medium-10 large-9">
+          <div class="region region-content-top">
+            <div id="block-fieldblock-node-page-default-field-utexas-hero-photo" class="block block-fieldblock">
+              <div class="content">
+                <div class="field field_utexas_hero_photo">
+
+                  <img class="utexas-hero-photo" typeof="foaf:Image"
+                    src="../sites/default/files/styles/home_story/public/home_highlight/islamic-3710002.jpg"
+                    alt="mosque" />
+                  <div class="hero-caption">
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-bottom bottom-search">
+      <section class="main-content">
+        <div class="row">
+          <div class="column medium-centered medium-10 large-9">
+            <div class="region region-content-bottom">
+              <div id="block-fieldblock-node-page-default-field-wysiwyg-a" class="block block-fieldblock">
+                <div class="content">
+                  <div class="field field_wysiwyg_a">
+                    <h2 class="alignright">تعارف حضرت شیخ الحدیث بانی ٴجامعہ</h2>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">شیخ الحدیث حضرت مولانا سلیم الله
+                      خان صاحب دامت برکاتہم کی شخصیت برصغیر پاک وہند کے علمی حلقوں میں کسی تعارف کی محتاج نہیں۔ حضرت کے
+                      اجداد پاکستان کے جس علاقے سے ہندوستان منتقل ہوئے آج وہ علاقہ خیبر ایجنسی میں تیراہ کے قریب چورا
+                      کہلاتا ہے۔ آپ 25 دسمبر 1926ء کو ہندوستان کے ضلع مظفر نگر کے مشہور قصبہ حسن پورلوہاری کے ایک معزز
+                      خاندان میں پیدا ہوئے، آپ کا تعلق آفریدی پٹھانوں کے ایک خاندان ملک دین خیل سے ہے۔ حسن پور لوہاری
+                      ہمیشہ اکابرین کا مسکن ومرجع رہا ہے۔ حضرت حاجی امدادالله مہاجرمکی
+                      کے شیخ میاں جی نور محمد صاحب ساری زندگی اسی گاؤں میں سکونت پذیر رہے۔ </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">آپ نے ابتدائی تعلیم حضرت حکیم
+                      الامتکے مشہور خلیفہ مولانا مسیح الله خان صاحب کے مدرسہ مفتاح العلوم میں حاصل کی۔ 1942ءء میں آپ
+                      اپنے تعلیمی سلسلے کی تکمیل کے لیے ازہر ہند، دارالعلوم دیوبند میں داخل ہوئے، جہاں آپ نے فقہ، حدیث و
+                      تفسیر و دیگر علوم وفنون کی تکمیل کی اور1947ء میں آپ نے امتیازی نمبرات کے ساتھ سند فراغت حاصل کی۔
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      دارالعلوم دیوبند سے فراغت کے بعد آپ نے اپنے علاقے میں موجود اپنے استادو مربی حضرت مولانا مسیح الله
+                      خان صاحب رحمة الله علیہ، خلیفہ خاص حضرت حکیم الامت مولانا اشرف علی تھانوی ، کی زیر نگرانی مدرسہ
+                      مفتاح العلوم جلال آباد میں تدریسی وتنظیمی امور انجام دینے شروع کیے۔ آٹھ سال تک شب وروز کی انتہائی
+                      مخلصانہ محنت کا یہ نتیجہ سامنے آیا کہ مدرسہ حیرت انگیز طور پر ترقی کی راہ پر گامزن ہو گیا اور
+                      مدرسہ کے طلبا کا تعلیمی اور اخلاقی معیار اس درجہ بلندہوا کہ دارالعلوم دیوبند اور دیگر بڑے تعلیمی
+                      اداروں میں یہاں کے طلبا کی خاص پذیرائی ہونے لگی۔
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      مدرسہ مفتاح العلوم میں آٹھ سال کی شبانہ روز محنتوں کے بعد حضرت شیخ الحدیث مدظلہ، شیخ الاسلام حضرت
+                      مولانا شبیر احمد عثمانی رحمة الله علیہ کی قائم کردہ پاکستان کی مرکزی دینی درس گاہ دارالعلوم
+                      ٹنڈوالہ یار سندھ میں تدریسی خدمات انجام دینے کے لیے پاکستان تشریف لے آئے۔ تین سال یہاں پر کام کرنے
+                      کے بعد آپ ملک کے معروف دینی ادارے دارالعلوم کراچی میں تشریف لائے اور پھر مسلسل دس سال دارالعلوم
+                      کراچی میں حدیث ، تفسیر، فقہ، تاریخ ، ریاضی ، فلسفہ اور ادب عربی کی تدریس میں مشغول رہے ، اسی دوران
+                      آپ ایک سال حضرت مولانا محمدیوسف بنوری رحمة الله علیہ کے اصرار پر جامعة العلوم الإسلامیہ بنوری ٹاؤن
+                      میں دارالعلوم کی تدریس کے ساتھ ساتھ فارغ اوقات میں مختلف اسباق پڑھانے کے لیے تشریف لاتے رہے۔
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      قدرت نے آپ کی فطرت میں عجیب دینی جذبہ ودیعت فرمایا تھا جس کے باعث آپ شب وروز کی مسلسل اور کامیاب
+                      خدمات کے باوجود مطمئن نہیں تھے اور علمی میدان میں ایک نئی دینی درس گاہ ( جو موجودہ عصری تقاضوں کو
+                      بھی پورا کرتی ہو) کی تاسیس کو ضروری خیال فرماتے تھے۔
+
+
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      چناں چہ23 جنوری1967ء مطابق شوال1387ھ میں آپ نے جامعہ فاروقیہ کراچی کی بنیاد رکھی۔ آپ کی یہ مخلصانہ
+                      کوشش الله تبارک وتعالیٰ کے ہاں اتنی قبول ہوئی کہ تاسیس جامعہ کے بعد سے لے کر اب تک (سن 2007ء)کے
+                      مختصر عرصہ میں جامعہ نے تعلیمی وتعمیری میدان میں جو ترقی ہے وہ ہر خاص وعام کے لیے باعث حیرت ہے ۔
+                      فللہ الحمد علی ذلک
+
+
+
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      آج الحمدلله جامعہ فاروقیہ کراچی ایک عظیم دینی و علمی مرکزکی حیثیت سے پاکستان اور بیرون پاکستان ہر
+                      جگہ معروف مشہور ہے اور یہ الله تبارک وتعالیٰ کے فضل واحسان اور حضرت شیخ الحدیث مولانا سلیم الله
+                      خان صاحب کی مخلصانہ جدوجہد کا نتیجہ ہے۔
+
+
+                    </p>
+
+
+
+                    <h2 class="alignright" id="part2">تعارف ٴجامعہ</h2>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ہر وہ شخص جسے تاریخ سے تھوڑا سا بھی تعلق ہے اچھی طرح اس بات سے واقف ہے کہ برصغیر پاک وہند میں
+                      دوران استعمار یہاں کے مسلمانوں کی جمعیت کو برقرار رکھنے کے لیے اوران کے اسلامی تشخص کے استحکام کے
+                      لیے جو خدمات دارالعلوم دیوبند اور ابنائے دارالعلوم نے انجام دی تھیں وہ نہ صرف مثالی اور مفید تھیں
+                      بلکہ ہر اعتبار سے قابل تقلید بھی تھیں۔
+
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      چناں چہ دارالعلوم دیوبند کے قیام کے بعد پورے برصغیر میں مدارس دینیہ کا جال بچھتا چلا گیا، چناں چہ
+                      جگہ جگہ مدرسے، مکاتب قائم ہوئے اور حفاظت قرآن وسنت کا اہتمام ہونے لگا، ہمارے وطن عزیز اسلامی
+                      جمہوریہ پاکستان میں بھی آج جو مدارس کی محنت کا ایک عظیم الشان سلسلہ جاری ہے اور سالانہ تقریباً
+                      سترہ لاکھ طلباء دینی علوم کو حاصل کر رہے ہیں۔
+
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      یہ سب اسی مبارک سلسلہ کا تسلسل ہے۔آج مدارس اسلامیہ کی خدمات اسلامی تاریخ کا ایک سنہری باب قرار
+                      پاچکی ہیں، اور بعد میں آنے والے واقعات نے یہ بات ثابت کر دی کہ یہ مدارس نہ صرف استعماری اثرات کو
+                      روکنے کا باعث بنے بلکہ ان کے ذریعہ اسلامی علوم کی جو بے مثال خدمت انجام پائی ہے وہ تمام عالم کے
+                      لیے ناقابل تصور تھی۔
+
+                    </p>
+
+
+                    <h2 class="alignright">
+                      پاکستان میں اسلامی خدمات کا آغاز
+
+                    </h2>
+
+
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      مملکت خداداد پاکستان کے وجود میں آنے کے بعد مدارس اور دینی مراکز کی ایک بڑی تعداد ہندوستان میں ہی
+                      رہ گئی تھی او رپاکستان میں ان کی کمی شدت سے محسوس ہورہی تھی۔ لیکن پاکستان میں موجود علمائے کرام
+                      اپنے فرض منصبی سے غافل نہیں تھے۔
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      چناں چہ ان مخلص اکابر علماء کی کوششوں سے اس نئی مملکت میں جلد ہی مدارس، مساجد اور دیگر مختلف النوع
+                      دینی ادارے وجود میں آنے لگے جن کی تعداد اب ہزاروں تک پہنچ گئی ہے۔
+
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      یہ مدارس انتہائی منظم انداز میں ملک کے ہر گوشے میں قائم کیے گئے ہیں جن میں کراچی ، حیدرآباد، سکھر،
+                      میرپورخاص، لاڑکانہ، لاہور، راولپنڈی، مانسہرہ، آزادکشمیر، فیصل آباد، ملتان، ڈیرہ اسماعیل خان، ڈیرہ
+                      غازی خان، پشاور، کوہاٹ، مردان، گلگت، اسکردو، چترال، کوئٹہ، مستونگ، پشین، چمن ، مکران، تربت، پنجگور
+                      اور قلات، خضدار کے تمام علاقے شامل ہیں۔ یہ محض الله تبارک وتعالیٰ کا فضل واحسان ہے کہ یہ مدارس
+                      بغیر کسی حکومتی مدد وفنڈ کے بحسن وخوبی اپنی دینی وتعلیمی خدمات کو انجام دے رہے ہیں۔
+
+
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      ان اداروں کا یہ انداز کہ یہ تمام ادارے جن کے سالانہ مصارف کروڑوں روپے تک پہنچتے ہیں اپنے وسائل اور
+                      آمد وخرچ کی تمام رقوم خود مہیا کرتے ہیں اور اہل خیر حضرات ان اداروں کے ساتھ اپنے تعاون کو اپنے لیے
+                      باعث خیر وبرکت سمجھتے ہیں۔ نہ صرف یہ کہ قابل تقلید ہے بلکہ انتہائی طور پر قابل تعریف بھی ہے
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      چناں چہ قرآن وحدیث کے علوم کو عام کرنے کے لیے، ملک میں اسلامی معاشرے کے قیام کو وجود دینے کے
+                      لیے1967ء میں شاہ فیصل ٹاؤن کراچی کے علاقے میں ایک دینی علوم کا رفاہی ادارہ جامعہ فاروقیہ کراچی کے
+                      نام سے قائم کیا گیا۔
+                    </p>
+
+
+
+
+
+                    <h2 class="alignright" id="part3">
+                      شعبہ جات جامعہ
+                    </h2>
+                    <h2 class="alignright">
+                      شعبہ دارالافتاء </h2>
+
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      جیسا کہ آپ کے علم میں ہے کہ جامعہ میں ایک عرصہ سے دارالافتاء کا سلسلہ جاری ہے جس کی نگرانی ابتداءً
+                      حضرت شیخ الحدیث رئیس الجامعہ رحمة الله علیہ خود فرمایا کرتے تھے ۔ پھر کچھ عرصہ یہ خدمت حضرت مفتی
+                      نذیراحمد شاہ صاحب نے انجام دی، پھر ایک طویل عرصہ یہ خدمت حضرت شہید مفتی نظام الدین شامزی صاحب رحمة
+                      الله علیہ کے سپرد رہی ، اس کے بعد کچھ عرصہ یہ خدمت احقر کے بھی سپرد رہی ۔ -اب اس ذمہ داری کو جامعہ
+                      کے استاذ حدیث حضرت مولانا محمدیوسف افشانی صاحب زید مجدہ انجام دے رہے ہیں ۔ حضرت مولانا کے ساتھ اس
+                      خدمت میں حضرت ڈاکٹر مولانا منظور احمد مینگل ، مفتی عبدالباری صاحب، مفتی سمیع الله صاحب ، مفتی احمد
+                      خان صاحب اور مفتی محمد عمیر عادل صاحب حفظہم الله بھی دارالافتاء وشعبہ تخصص فی الفقہ میں خدمات
+                      انجام دے رہے ہیں۔
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      یہ حضرات جہاں ایک طرف تخصص فی الفقہ کے طلبا کی راہنمائی ونگرانی کی ذمہ داریاں نبھاتے ہیں وہاں
+                      دارالافتاء جامعہ فاروقیہ کراچی کی فتوی نویسی کی ذمہ داریاں بھی ان حضرات کے کا ندھوں پر ہیں۔
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      یہ حضرات جہاں ایک طرف تخصص فی الفقہ کے طلبا کی راہنمائی ونگرانی کی ذمہ داریاں نبھاتے ہیں وہاں
+                      دارالافتاء جامعہ فاروقیہ کراچی کی فتوی نویسی کی ذمہ داریاں بھی ان حضرات کے کا ندھوں پر ہیں۔
+
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      روزانہ لوگوں کی ایک بڑی تعداد ڈاک، فیکس، ٹیلیفون اور ذاتی طور پر جامعہ آکر مسائل دینیہ سے واقفیت
+                      حاصل کرنے کی کوشش کرتی ہے اور یہ حضرات نہایت دیانت و باریک بینی سے یہ خدمت انجام دینے میں شب وروز
+                      مصروف رہتے ہیں۔ بعض مرتبہ مختلف حضرات اپنے تنازعات کے بارے میں بھی شرعی فیصلے کے لیے جامعہ کے
+                      دارالافتاء کی طرف رجوع کرتے ہیں اور پھر پوری تفصیلات کو پیش نظر رکھ کر دارالافتاء ان کے لیے شرعی
+                      فیصلے کا اہتمام کرتا ہے، اس طرح بے شمار حضرات اپنے تنازعات شرعی طور پر طے کراکر امن وچین کی زندگی
+                      گزار رہے ہیں ۔ والحمدلله علی ذلک
+                    </p>
+
+
+                    <h2 class="alignright">
+                      شعبہ تعلیم
+                    </h2>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      جامعہ فاروقیہ کراچی چوں کہ ایک تعلیمی ادارہ ہے اس لیے جامعہ کی خدمات کا ایک بہت بڑا حصہ تعلیم
+                      وتربیت پر مشتمل ہے ، اساتذہ وکارکنان جامعہ شب وروز جامعہ سے وابستہ طلبا کی خدمت میں مشغول رہتے
+                      ہیں۔ایک بہترین تعلیمی ادارے کے لیے بہترین نصاب تعلیم ایک لازمی امر ہے اس لیے جامعہ فاروقیہ کراچی
+                      روز اوّل سے اپنے نظام تعلیم، نصاب تعلیم کوبہتر سے بہتر کرنے کی محنت میں مصروف ہے۔
+
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      جامعہ میں ابتداء ً پانچ سال تک ابتدائیہ (پرائمری) کی تعلیم دی جاتی ہے جس کے بعد تین سالہ متوسطہ
+                      (مڈل) تک کی تعلیم دی جاتی ہے جس میں اردو، فارسی، ریاضی، انگریزی، سائنس وغیرہ پڑھائی جاتی ہے، اس کو
+                      درجہ متوسطہ کے نام سے موسوم کیا جاتا ہے، اس کے بعد مشہور دینی تعلیمی نصاب درس نظامی کی تعلیم ہوتی
+                      ہے جس میں آٹھ سال تک تفسیر، اصول تفسیر، حدیث، اصول حدیث، فقہ، اصول فقہ، ادب، معانی، بیان، بلاغت،
+                      منطق وفلسفہ، صرف، نحو کی تعلیم دی جاتی ہے۔ اس طرح درس نظامی کا یہ آٹھ سالہ نصاب، پانچ سالہ
+                      ابتدائیہ اور تین سالہ متوسطہ کے ساتھ سولہ سالہ نصاب بن جاتا ہے جو ایم۔ اے کے مساوی ہے۔ اس نصاب سے
+                      فراغت کے بعد مختلف تخصصات کا دو دوسال کا سلسلہ ہوتا ہے مثلاً تخصّص فی الفقہ الاسلامی کی تعلیم دو
+                      سال تک دی جاتی ہے جس میں فقہ کے مطابق فتوی دینے کی مشق کرائی جاتی ہے اور جدید مسائل پر بھی تحقیق
+                      ہوتی ہے۔ اس کے علاوہ مختلف النوع تخصّصات میں طلباء کو خاص طور پر تحقیق و مراجعت کتب کا اہتمام
+                      کرایا جاتا ہے۔
+
+                    </p>
+
+
+                    <h2 class="alignright">
+                      شعبہ تحفیظ القرآن الکریم
+                    </h2>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      دنیا بھر کے مسلمانوں کو قرآن کریم سے جو قلبی لگاؤ ہے وہ کسی مسلمان سے پوشیدہ نہیں ہے، اسی لیے دنیا
+                      بھر کے مدارس مسلمان معاشرے میں حفظ قرآن کی خدمت انجام دیتے ہیں، حفظ قرآن کی یہ خدمت اب الحمدلله
+                      پاک وہند کی ایک ایسی روایت بن چکی ہے جس کی نظیر پوری دنیا میں کہیں نہیں ملتی، الله رب العزت نے
+                      ہمارے اسلاف رحمہم الله کو اس کارخیر کے لیے منتخب فرمایا ہے جو یقینا اسی ذات اقدس کا فضل واحسان ہے۔
+                      جامعہ فاروقیہ کراچی بھی حفظ قرآن کے سلسلے میں اپنی کوشش جاری رکھے ہوئے ہے، چناں چہ جامعہ فاروقیہ
+                      میں اس وقت حفظ کی کئی کلاسیں قائم ہیں اور اب تک جامعہ سے ہزاروں طلبہ حفظ قرآن کی تکمیل کرچکے ہیں،
+                      شعبہ حفظ کی یہ خدمت جامعہ میں اورجامعہ کی شاخ رفاہ عام میں اور جامعہ کی نگرانی میں نارتھ ناظم آباد
+                      بلاک ایل، سندھی مسلم سوسائٹی، عظیم پورہ اور الفلاح سوسائٹی بلاک اے ،جامع مسجد بلال ڈرگ روڈ میں بھی
+                      انجام دی جارہی ہے۔
+
+                    </p>
+
+                    <h2 class="alignright">
+                      شعبہ تخصصات فی العلوم الاسلامیہ
+                    </h2>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+                      Specialisation) جامعہ میں دیگر شعبہ جات کے ساتھ ایک اہم شعبہ تخصصات فی العلوم الاسلامیہ کا ہے ۔
+                      جامعہ میں اب تک اس شعبہ میں درجہ ذیل علوم وفنون میں تخصص کا اہتمام کیا گیا ہے۔
+
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      تخصص فی التفسیر۔ تخصص فی الحدیث۔ تخصص فی الفقہ الاسلامی۔ تخصص فی العلوم العربیہ والادبیہ
+                    </p>
+
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      ان مختلف النوع تخصصات میں طلباء کو خاص طور پر تحقیق ومراجعت کتب کا اہتمام کرایا جاتا ہے تاکہ ہمارے
+                      فارغ التحصیل ہونے والے طلباء مختلف علوم میں عمومی مہارت سمجھ بوجھ رکھتے ہوئے خاص طور پر کسی خاص
+                      علم میں مہارت تامہ حاصل کر سکیں، چناں چہ اس شعبہ کے نصاب میں بعض درسی مواد طلباء کو سبقاً سبقاً
+                      پڑھایا جاتا ہے جب کہ نصاب کے بڑے حصے کا مطالعہ کرایا جاتا ہے ۔ درس ومطالعہ کے علاوہ اس شعبہ کے ہر
+                      طالب علم کے لیے کسی ایک موضوع پر مقالہ لکھنا بھی لازمی ہوتا ہے جس کا انتخاب متعلقہ شعبہ کا نگران
+                      کرتا ہے ۔ بطور مثال ہم یہاں پر تخصص فی الفقہ الاسلامی کا نصاب درج کر رہے ہیں۔ </p>
+
+                    </p>
+
+                    <h2 class="alignright">
+                      شعبہ تخصص فی الفقہ الاسلامی کا نصاب تعلیم
+                    </h2>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      شعبہ تخصص فی الفقہ الاسلامی کے نصاب تعلیم کو تین حصوں میں تقسیم کیا گیا ہے: پہلاحصہ، تدریس، دوسرا
+                      حصہ مطالعہ، تیسرا حصہ تمرین افتاء۔
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      تدریس او رمطالعہ میں شامل کتب کا چہار ماہی او رسالانہ امتحان لازمی ہے۔
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      تدریس: جیسا کہ منسلکہ نقشے میں دیا گیا ہے سال اول کے طلباء کے لیے اصول افتاء ،سراجی او رانگریزی کی
+                      باقاعدہ تدریس ہوتی ہے، اس کے ساتھ خوش خطی بھی سکھائی جاتی ہے ، سال دوم میں فلکیات کے مبادیات اور
+                      تخریج سمت قبلہ سکھائی جاتی ہے۔
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      مطالعہ: مطالعہ کے لیے نصاب میں شامل کتب کے علاوہ فقہ وافتاء سے متعلق مختلف کتب کا مطالعہ کروایا
+                      جاتا ہے ، البتہ ان تمام کتب کا امتحان لازمی نہیں ،بلکہ نصاب میں درج کتب سے ہی امتحان لیا جاتا ہے۔
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      تمرین افتاء: پہلی سہ ماہی میں تمرین کے لیے فتاوی نہیں دیئے جاتے اور اسی طرح سال دوم کی آخری سہ
+                      ماہی میں بھی تفویض مقالہ کی وجہ سے تمرین افتاء لازمی نہیں البتہ اختیاری ہے ، تمرین کا عرصہ پہلے
+                      سال کی سہ ماہی کے بعد سے دوسرے سال کی ششماہی تک ہوتا ہے، فتاوی جات کی تعداد دوسو آخری نہیں ، بلکہ
+                      یہ لازمی اور کم از کم تعداد ہے ، عام طور پر تعداد اس سے زائد ہوتی ہے۔
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+                      تفویض مقالہ: دوسری سہ ماہی میں ”لجنة المشرفین“ کا اجلاس ہوتا ہے۔ جس میں مقالہ کے لیے موضوعات کا
+                      انتخاب اور طلبا ومشرفین حضرات کا تعین کیا جاتا ہے۔
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+                      مقالہ سے متعلق قواعد وضوابط درج ذیل ہیں:
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+                      مشرفین حضرات کی طرف سے بتائے گئے امور کی پابندی کرتے ہوئے منتخب موضوع پر کم از کم دو سو صفحات پر
+                      مشتمل ایک مقالہ لکھنا ہو گا۔
+
+                    </p>
+
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+                      ہر متخصص کو اپنا مفوضہ کام جامعہ کے سالانہ امتحانات تک جمع کرانا ہو گا، مخصوص حالات میں مقالہ نویس
+                      کی درخواست پر ”مشرف“ کی صوابدید پر زیادہ سے زیادہ تین ماہ کی توسیع کی جاسکتی ہے۔
+
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+                      اگر مقالہ نگار اپنے مفوضہ کام میں ترمیم یا اضافہ چاہتا ہے تو مشرفین حضرات کی اجازت سے ہی ایسا
+                      کرناممکن ہو گا۔
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+                      متخصص کے لیے ضروری ہے کہ وہ اپنے کام کی اصلاح وتصحیح کے لیے وقتاً فوقتاً اپنے ” مشرف“ سے رابطہ
+                      رکھے ، پندرہ دن کے بعد اور زیادہ سے زیادہ ایک ماہ کے اند راپنی کارکردگی مشرف کے حضور مناقشہ کے لیے
+                      پیش کرتا رہے۔
+                    </p>
+
+                    <h2 class="alignright" id="part4">
+                      ادارہ الفاروق کراچی
+
+                    </h2>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+
+                      جامعہ فاروقیہ کراچی نے جامعہ سے دینی علمی رسالوں کے اجراء کا جب فیصلہ کیا تو ادارہ الفاروق کراچی
+                      کے نام سے اس شعبہ کی بنیاد ڈالی تاکہ اردو، عربی، انگریزی اور سندھی زبان میں جاری کیے جانے والے
+                      رسالوں کو ایک بہتر ترتیب او رمعیار کے ساتھ شائع کیا جائے اور جامعہ سے شائع ہونے والی کتب کے لیے
+                      بھی ایک پلیٹ فارم وجود میں آسکے۔چناں چہ جہاں اب الفاروق اردو، الفاروق عربی، الفاروق سندھی اور
+                      الفاروق انگریزی ادارہ الفاروق سے شائع ہو رہے ہیں وہاں پر فتاویٰ محمودیہ جیسا عظیم الشان بیس ضخیم
+                      جلدوں میں شائع شدہ فتاوی کا مجموعہ بھی ادارہ الفاروق کراچی ہی سے منظر عام پرآچکاہے، ان شاء الله
+                      خدمات کا یہ سلسلہ او ربھی آگے بڑھے گا، ادارہ الفاروق سے شائع ہونے والے معیاری رسالوں کا مختصر
+                      تعارف یہ ہے۔
+
+
+                    </p>
+
+
+                    <h2 class="alignright">
+                      شعبہ تصنیف وتالیف
+                    </h2>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+
+                      جامعہ میں الحمدلله جہاں اور بہت سی مختلف النوع خدمات انجام دی جارہی ہیں وہاں تصنیف وتالیف کے میدان
+                      میں بھی نمایاں خدمات انجام دی جارہی ہیں، یقینا اس میدان میں بھی وقیع انداز سے خدمات انجام دینا اہل
+                      جامعہ کی ذمہ داری ہے۔
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+
+                      چناں چہ کئی سال سے حضرت شیخ الحدیث صاحب مدظلہم کی نگرانی میں یہ شعبہ تصنیف وتالیف قائم کیا گیا ہے
+                      اور حضرت کی تقریر صحیح بخاری پر کشف الباری کے نام سے اور ، تقریر مشکوٰة المصابیح پر نفحات التنقیح
+                      کے نام کام شروع کیا گیا جواب نہایت بہتر انداز میں جاری ہے اور حضرت شیخ الحدیث زید مجدہ کی نگرانی
+                      میں اس شعبہ کو روز بروز ترقی ہو رہی ہے۔ اب اس شعبہ کو مزید منظم بہتر کرتے ہوئے او راس کے کام کو
+                      تیز کرنے کے لیے اس میں بطور نگران مولانا عبیدالله خالد صاحب کا تقرر کیا گیا ہے، اس اہم کام میں ان
+                      کی معاونت کے لیے اور بھی متعدد حضرات اساتذہ کو مقرر کیا گیا ہے ۔
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+
+
+                      اہل علم خوب واقف ہیں کہ حضرت شیخ الحدیث زید مجدہ کی تألیف کشف الباری صحیح البخاری کی ایک اہم شرح
+                      ہے اور اس وقت اردو کی دستیاب شروح میں ایک ممتاز مقام کی حامل ہے، کشف الباری کی اس شرح کو یہ بھی
+                      امتیاز حاصل ہے کہ اس میں صحیح بخاری شریف کی دونوں جلدوں (اول وثانی) کی شرح موجود ہے جب کہ دیگر بعض
+                      شریح میں فقط جلد اول کو موضوع بنایا گیا ہے اور جلد ثانی کی ابحاث بغیر شرح کے رہ گئی ہیں، کشف
+                      الباری کی اب(2007ء) تک بارہ جلدیں منظر عام پر آچکی ہیں اور مزید کام جاری ہے۔
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+
+
+                      اسی طرح تقریر مشکوٰة پر بھی کام جاری ہے۔ تقریر مشکوٰة کی تین جلدیں اب تک طبع ہو چکی ہیں بقیہ پرکام
+                      ہو رہا ہے ۔ ان شا ء الله جلد ہی یہ کتب بھی اہل علم کے سامنے پیش کر دی جائیں گی۔
+                    </p>
+
+                    <h2 class="alignright">
+                      فاروقیہ میڈیکل سینٹر
+                    </h2>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+
+
+                      دکھی انسانیت کی خدمت ہمیشہ اچھے انسانوں کا شیوہ رہا ہے اور ہمارے اسلاف اہل الله نے ہمیشہ خدمت خلق
+                      کو اپنا شعار بنایا ہے ۔ اسی فکر کو اپناتے ہوئے جامعہ میں بھی طویل عرصہ سے ایک میڈیکل سینٹر قائم ہے
+                      جس میں ابتدائی طبی ضروریات کا مکمل انتظام ہے ۔ ہمارے اس سینٹر میں بہترین کوالیفائیڈ ڈاکٹر خدمات
+                      انجام دے رہے ہیں ۔ جب کہ ایک ماہر لیڈی ڈاکٹر بھی خدمت انجام دے رہی ہیں۔ دوران سال علاج کے لیے آنے
+                      والے مریضوں کی تعدادہزاروں میں ہوتی ہے۔ واضح رہے کہ اس سینٹر کے ذریعہ طلبائے جامعہ کا علاج مفت
+                      ہوتا ہے۔ جب کہ دیگر بیرونی افراد سے معمولی چارجز لیے جاتے ہیں ، فاروقیہ میڈیکل سینٹر کے ذمہ داران
+                      جس خلوص اور للہٰیت کے ساتھ اس خدمت کو سنبھالے ہوئے ہیں اس کی بہترین جزاء الله رب العزت یقینا عطا
+                      فرمائیں گے۔
+
+                    </p>
+
+                    <h2 class="alignright">
+                      مالیات
+                    </h2>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+
+
+
+                      عام دینی اداروں کی طرح جامعہ فاروقیہ کراچی کا بھی کوئی مستقل ذریعہ آمدنی نہیں ہے ۔د ینی ذوق رکھنے
+                      والے عام مسلمانوں کی زکوٰة، عطیات وصدقات سے یہ ادارہ کام کر رہا ہے۔ کتنے ایسے لوگ ہیں جو نمایاں
+                      ہوئے بغیر محض الله تبارک وتعالیٰ کی رضا کے لیے دینی تقاضوں میں اپنا حصہ شامل کرتے رہتے ہیں، ان
+                      حضرات کی دعائیں اور تعاون ہمارے ادارے کے لیے سرمایہ سعادت ہیں، الله تعالیٰ انہیں اجر عظیم عطا
+                      فرمائیں۔ آمین۔
+
+                    </p>
+
+                    <h2 class="alignright" id="part5">
+                      فاروقیہ کمپیوٹر انسٹی ٹیوٹ
+                    </h2>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+
+
+
+
+                      جامعہ میں جہاں اور اہم تعلیمی سرگرمیاں انجام دی جارہی ہیں وہاں کمپیوٹر کے میدان میں باقاعدہ تعلیم
+                      کا سلسلہ بھی جاری ہے ۔ اور روزانہ جامعہ کے طلبا جامعہ میں قائم فاروقیہ کمپیوٹر انسٹی ٹیوٹ میں
+                      کمپیوٹر کلاس میں شریک ہوتے ہیں۔جامعہ نے کمپیوٹر کی تعلیم کے ماہر افراد کا انتظام کیا ہوا ہے جو
+                      پوری محنت سے اس خدمت کی انجام دہی میں مصروف ہیں۔
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+
+                      جامعہ میں یہ کمپیوٹر کلاسیں گزشتہ کئی سالوں سے مسلسل جاری ہیں اور مختلف النوع مفید او راہم پروگرام
+                      طلبائے جامعہ اردو، عربی اور انگریزی زبانوں میں سیکھ رہے ہیں۔
+
+                    </p>
+
+                    <h2 class="alignright">
+                      مطبخ جامعہ
+                    </h2>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+
+                      جامعہ فاروقیہ کراچی میں مقیم طلباء کے لیے روزانہ کھانے کا انتظام کیا جاتا ہے، یہ کھانا دوپہر اور
+                      شام کے اوقات میں فراہم کیا جاتا ہے کھانے کو حفظان صحت کے اصولوں پر تیار کرنے کے لیے جامعہ میں
+                      تجربہ کار افراد کا تقرر کیا گیا ہے جو مختلف انداز سے کبھی گوشت کبھی سبزی، کبھی دال، کبھی چاول
+                      وغیرہ پکا کر طلبا کے کھانے کی ضرورت کو پورا کرتے ہیں ، یہ کھانا بغیر کسی قیمت کے طلباء کو فراہم
+                      کیا جاتا ہے
+                    </p>
+
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      روٹی پکانے کے لیے روٹی پلانٹ لگایا گیاہے اور آٹا گوندھنے کا کام مشین کرتی ہے پیاز ، آلو وغیرہ
+                      کاٹنے کے لیے بھی مشین سے مدد لی جاتی ہے جب کہ گوشت کاٹنے کا انتظام بھی بذریعہ مشین ہے،مطبخ کا راشن
+                      الگ اسٹور میں رکھا جاتا ہے او رمطبخ کے نگران کی ہدایات کے مطابق ایک مقررہ ترتیب واحتیاط کے ساتھ اس
+                      کا استعمال ہوتا ہے۔
+
+                    </p>
+
+                    <h2 class="alignright">
+                      R.O پلانٹ
+                    </h2>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      جس سے جامعہ میں پانی کی ضرورت کو پورا کیا جارہا ہے، او راہلہ محلہ بھی اس سے استفادہ کر رہے ہیں۔
+
+                    </p>
+
+                    <h2 class="alignright" id="part6">
+                      جامعہ کی شاخیں
+                    </h2>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      جامعہ کے زیر انتظام شہر میں کئی شاخیں کام کر رہی ہیں جن میں جامعہ فاروقیہ فیز 2، حب ریور روڈ،جامعہ
+                      فاروقیہ فیز 3، رفاہ عام سوسائٹی، جامع مسجد منورہ، نارتھ ناظم آباد، جامع مسجد محمد بن قاسم، سندھی
+                      مسلم ہاؤسنگ سوسائٹی، مسجد قباء، ساکران، بلوچستان اور دارالقرآن سہون، سندھ اپنی خدمات کے اعتبار سے
+                      نمایاں ہیں۔
+                    </p>
+
+                    <h2 class="alignright">
+                      جاری منصوبے
+                    </h2>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      جامعہ فاروقیہ کراچی فیز 2میں دارالقرآن کی عمارت کی تعمیر کے ساتھ ساتھ حضرت شیخ الحدیث رحمةالله
+                      علیہ کی خواہش پر وسیع وعظیم الشان جامع مسجد محمد بن قاسم کا سنگ بنیاد بھی رکھ دیا گیا ہے اور
+                      تعمیرات کا سلسلہ جاری ہے، منتظمین جامعہ کی خواہش ہے کہ یہ مسجد کراچی کی خوبصورت مساجد میں شمار ہو،
+                      ملک کے ماہر فن آرکٹیکٹ وانجینئرز حضرات نے اس کو ڈرائینگ کیا ہے، الله تبارک وتعالیٰ سے دعا ہے کہ وہ
+                      اس کی تعمیر کے اسباب آسان فرما دیں۔ آمین !
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      کراچی کی مشہور شاہراہ شارع مفتی محمود ( سابقہ حب ریور روڈ) پر واقع جامعہ کے اس نئے منصوبے میں عظیم
+                      الشان جامع مسجد، دارالقرآن، دارالحدیث، دارالافتاء، وسیع درس گاہیں، وسیع دارالاقامے، بوائز اور گرلز
+                      ماڈل اسکول، ٹیچر ٹریننگ کالج، یونانی میڈیکل کالج، کمپیوٹر انسٹی ٹیوٹ، دو سو پچاس بستروں پر مشتمل
+                      فاروقیہ میڈیکل جنرل ہسپتال ودیگر ضروری منصوبے شامل کیے گئے ہیں ۔
+                    </p>
+
+
+                    <h2 class="alignright" id="part7">
+                      ادارہ تعلیمات
+                    </h2>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      جامعہ فاروقیہ کراچی چوں کہ ایک تعلیمی ادارہ ہے اس لیے جامعہ کی خدمات کا ایک بہت بڑا حصہ تعلیم
+                      وتربیت پر مشتمل ہے ، اساتذہ وکارکنان جامعہ شب وروز جامعہ سے وابستہ طلبا کی خدمت میں مشغول رہتے
+                      ہیں۔ایک بہترین تعلیمی ادارے کے لیے بہترین نصاب تعلیم ایک لازمی امر ہے اس لیے جامعہ فاروقیہ کراچی
+                      روز اوّل سے اپنے نظام تعلیم، نصاب تعلیم کوبہتر سے بہتر کرنے کی محنت میں مصروف ہے۔
+
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      جامعہ میں ابتداء ً پانچ سال تک ابتدائیہ (پرائمری) کی تعلیم دی جاتی ہے جس کے بعد تین سالہ متوسطہ
+                      (مڈل) تک کی تعلیم دی جاتی ہے جس میں اردو، فارسی، ریاضی، انگریزی، سائنس وغیرہ پڑھائی جاتی ہے، اس کو
+                      درجہ متوسطہ کے نام سے موسوم کیا جاتا ہے، اس کے بعد مشہور دینی تعلیمی نصاب درس نظامی کی تعلیم ہوتی
+                      ہے جس میں آٹھ سال تک تفسیر، اصول تفسیر، حدیث، اصول حدیث، فقہ، اصول فقہ، ادب، معانی، بیان، بلاغت،
+                      منطق وفلسفہ، صرف، نحو کی تعلیم دی جاتی ہے۔ اس طرح درس نظامی کا یہ آٹھ سالہ نصاب، پانچ سالہ
+                      ابتدائیہ اور تین سالہ متوسطہ کے ساتھ سولہ سالہ نصاب بن جاتا ہے جو ایم۔ اے کے مساوی ہے۔ اس نصاب سے
+                      فراغت کے بعد مختلف تخصصات کا دو دوسال کا سلسلہ ہوتا ہے مثلاً تخصّص فی الفقہ الاسلامی کی تعلیم دو
+                      سال تک دی جاتی ہے جس میں فقہ کے مطابق فتوی دینے کی مشق کرائی جاتی ہے اور جدید مسائل پر بھی تحقیق
+                      ہوتی ہے۔ اس کے علاوہ مختلف النوع تخصّصات میں طلباء کو خاص طور پر تحقیق و مراجعت کتب کا اہتمام
+                      کرایا جاتا ہے۔
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      جامعہ میں موجود تمام درجات میں ایک ایک استاذ بطور نگران درجہ مقرر کیا جاتا ہے جو طلباء کی عمومی
+                      کیفیت، تعلیمی واخلاقی کیفیت، حاضری، غیرحاضری، اسباق کی مقدار خواندگی اور اساتذہ کی ہر ہر درجہ میں
+                      اسباق کی پابندی جیسی چیزوں پر نگاہ رکھتے ہوئے تعلیمی معیار کو بہتر کرنے میں اپنی صلاحیتوں کو
+                      استعمال کرتا ہے۔
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      شعبہ تعلیم میں درس و سبق میں پابندی کے ساتھ حاضری اور تکرار ومطالعہ کا خصوصی اہتمام کرایا جاتا ہے،
+                      مغرب وعشاء کے بعد دن کو پڑھے ہوئے اسباق کے مذاکرے اور مطالعہ کی نگرانی کے لیے اساتذہ مقرر کیے جاتے
+                      ہیں اور وہ پورے سال نگرانی کی ذمہ داری کو توجہ کے ساتھ نبھاتے ہیں، درس و تعلیم کے ساتھ ساتھ طلبہ
+                      کی اصلاح وتربیت کے لیے بھی مستقل ایک نظام ہے، ہفتہ میں ایک دن حضرت شیخ الحدیث یا دوسرے استاذ کا
+                      اجتماعی طور پر طلبہ کے سامنے بیان ہوتا ہے، جس میں طلبہ کو اصلاح وتربیت، اخلاق ومعاشرت، تزکیہ باطن
+                      اور اسلامی زندگی کے آداب و اصولوں سے روشناس کرایا جاتا ہے۔
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      جامعہ فاروقیہ کے شعبہ تعلیم میں ایک اہم بلکہ دینی مدارس کے حوالہ سے ایک قابل ذکر کام یہ کیا گیا ہے
+                      کہ تمام اسباق عربی زبان میں پڑھانے کے لیے ایک مستقل شعبہ معہد اللغة العربیہ والدراسات العلیا کے
+                      نام سے قائم کیا گیا، اس شعبہ میں درجہ اولیٰ سے درجہ سادسہ تک چھ درجے ہیں، نصاب کی کتابیں تقریباً
+                      وہی ہیں جو درس نظامی میں ہیں البتہ اس میں تعلیم مکمل عربی میں ہے۔
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+
+                      الحمدلله اس شعبہ سے عربی زبان میں اپنے مافی الضمیر کے اظہار کے سلسلہ میں جو کمی دینی مدارس کے طلبہ
+                      میں پائی جاتی ہے وہ کافی حد تک دور ہوئی اور طلبہ روانی کے ساتھ عربی زبان میں اظہار مافی الضمیر
+                      کرنے لگے ہیں، ”معہد اللغہ“ کے زیر انتظام ایک عربی انجمن بھی ”النادی العربی“ کے نام سے قائم ہے، یہ
+                      عربی زبان میں خطابت و تقریر کے لیے ایک موثر پلیٹ فارم اور طلبہ میں عربی زبان بولنے اور اس میں
+                      تقریر کرنے کا ولولہ اور جذبہ پیدا کرنے کا ایک زبردست ذریعہ ہے۔
+                    </p>
+
+                    <h2 class="alignright">
+                      قواعد داخلہ
+                    </h2>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+                      ۔1
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ نمازباجماعت کا بھرپور اہتمام کرے اور اذان کے بعد ہر قسم کے اعمال
+                      ترک کرکے نماز کی تیاری میں مشغول ہو جائے
+
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+                      ۔2
+
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ نمازباجماعت کا بھرپور اہتمام کرے اور اذان کے بعد ہر قسم کے اعمال
+                      ترک کرکے نماز کی تیاری میں مشغول ہو جائے
+
+
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+                      ۔3
+                      کسی بھی طالب علم کا اپنے ساتھیوں سے جھگڑنا ،یا جامعہ کے ملازمین سے بدتمیزی اور بداخلاقی سے پیش آنا
+                      نہایت قبیح جرم سمجھا جائے گا۔
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+                      ۔4
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ اپنے اساتذہ کرام کا ادب کرے، ان کی خدمت او ران سے استفادہ کو
+                      اپنی سعادت سمجھے اور ان سے اصلاحی تعلق قائم کرے۔
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔5
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ اپنے اساتذہ کرام کا ادب کرے، ان کی خدمت او ران سے استفادہ کو
+                      اپنی سعادت سمجھے اور ان سے اصلاحی تعلق قائم کرے۔
+
+
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔6
+                      طلبہ جامعہ کے لیے ضروری ہے کہ وہ دوران تعلیم کسی بھی تنظیم، تحریک اور جماعت سے قطعی طور پر لاتعلق
+                      ہوں، کسی بھی قسم کا کوئی تنظیمی تعلق جامعہ میں دوران قیام قطعی طور پر ممنوع ہے۔
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔7
+                      جامعہ میں تعلیم حاصل کرنے والے ہر طالب علم کے لیے ضروری ہے کہ وہ مروّجہ ملکی قوانین کی کسی خلاف
+                      ورزی کا مرتکب نہ ہو ایسا کوئی اقدام جامعہ سے فوری اخراج کا سبب قرار پائے گا۔
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔8
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ اپنے ساتھیوں کا احترام کرے، ان کے ساتھ محبت سے پیش آئے اور اپنے
+                      اساتذہ کی اطاعت کرے اور کسی بھی شکایت کی صورت میں ذمہ دارانِ جامعہ سے رجوع کرے۔
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔9
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ اسباق کی بھرپور پابندی کرے ، درس گاہ سے بلا عذر غیر حاضری ناقابل
+                      معافی جرم ہے ۔ شدید عذر کی صورت میں ناظم تعلیمات سے رخصت حاصل کرنا بے حد ضروری ہے۔
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔10
+                      ہر طالب کے لیے ضروری ہے کہ وہ مطالعہ اور تکرار کے اوقات میں مطالعہ، تکرار کی پابندی کرے، اس سلسلے
+                      میں کو تاہی پر پہلے تنبیہ ہوگی اور اصلاح نہ ہونے کی صورت میں جامعہ سے اخراج کر دیا جائے گا۔
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔11
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ اپنی درس گاہ اور جامعہ کی طرف سے فراہم کردہ کتابوں کی خوب حفاظت
+                      کرے۔
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔11
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ اپنی درس گاہ اور جامعہ کی طرف سے فراہم کردہ کتابوں کی خوب حفاظت
+                      کرے۔
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔12
+                      تکرار اور مطالعہ کی حاضری تکرار اور مطالعہ کے اوقات میں کسی بھی وقت لی جاسکتی ہے، غیر حاضر ہونے
+                      والے طالب علم کے لیے ناظم تعلیمات حسبِ جرم سزا مقرر کریں گے۔ </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔13
+                      عصر کے بعد کھیل یا تفریح کے لیے باہر جانے والے طلبا کا مغرب کی جماعت میں حاضر ہونا لازمی ہے، تاکہ
+                      مغرب کے بعد اپنے مطالعہ او رتکرار میں حاضر ہو سکیں۔
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔14
+                      تعلیمی اوقات کے دوران طلباء کا بلا اجازت ناظم دارالاقامہ یا ناظم تعلیمات جامعہ سے باہر جانا ممنوع
+                      ہے ۔نیز یہ پابندی مطالعہ اورتکرار کے اوقات میں بھی ہو گی، اس دوران جامعہ کے گیٹ کو مقفل کر دیا
+                      جائے گا۔
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔15
+                      تعلیمی اوقات کے دوران کینٹین میں بیٹھ کر وقت ضائع کرنا بھی ممنوع ہے۔ جب کہ مطالعہ او رتکرار کے
+                      اوقات میں صرف چائے پینے کے لیے وہاں جانے کی اجازت ہو گی، اخبار بینی اور ریڈیو سننا ممنوع ہو گا۔
+                    </p>
+
+
+                    <h2 class="alignright">
+                      قواعد داخلہ
+                    </h2>
+
+
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔1
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ جامعہ کی طرف سے نافذ کردہ قوانین کی صدق دل سے پابندی کرے،حرام
+                      امور سے اجتناب کرے، سنت نبوی صلی الله علیہ وسلم کی خوب پابندی رکھے اور اپنے ظاہری و باطنی اعمال
+                      میں سلف صالحین کی مشابہت کو اپنا شعار بنائے، چناں چہ داڑھی کاٹنا یا اسے شرعی مقدار سے چھوٹا کرنا،
+                      سگریٹ نوشی کرنا، سینما، ٹیلی ویژن، وی سی آر دیکھنا جرم ہیں۔
+
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔2
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ نمازباجماعت کا بھرپور اہتمام کرے اور اذان کے بعد ہر قسم کے اعمال
+                      ترک کرکے نماز کی تیاری میں مشغول ہو جائے۔
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔3
+                      کسی بھی طالب علم کا اپنے ساتھیوں سے جھگڑنا ،یا جامعہ کے ملازمین سے بدتمیزی اور بداخلاقی سے پیش آنا
+                      نہایت قبیح جرم سمجھا جائے گا۔
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔4
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ اپنے اساتذہ کرام کا ادب کرے، ان کی خدمت او ران سے استفادہ کو
+                      اپنی سعادت سمجھے اور ان سے اصلاحی تعلق قائم کرے۔
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔5
+                      طلبہ جامعہ کے لیے ضروری ہے کہ وہ دوران تعلیم کسی بھی تنظیم، تحریک اور جماعت سے قطعی طور پر لاتعلق
+                      ہوں، کسی بھی قسم کا کوئی تنظیمی تعلق جامعہ میں دوران قیام قطعی طور پر ممنوع ہے۔
+
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔6
+                      جامعہ میں تعلیم حاصل کرنے والے ہر طالب علم کے لیے ضروری ہے کہ وہ مروّجہ ملکی قوانین کی کسی خلاف
+                      ورزی کا مرتکب نہ ہو ایسا کوئی اقدام جامعہ سے فوری اخراج کا سبب قرار پائے گا۔
+
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔7
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ اپنے ساتھیوں کا احترام کرے، ان کے ساتھ محبت سے پیش آئے اور اپنے
+                      اساتذہ کی اطاعت کرے اور کسی بھی شکایت کی صورت میں ذمہ دارانِ جامعہ سے رجوع کرے۔
+
+                    </p>
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔8
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ اسباق کی بھرپور پابندی کرے ، درس گاہ سے بلا عذر غیر حاضری ناقابل
+                      معافی جرم ہے ۔ شدید عذر کی صورت میں ناظم تعلیمات سے رخصت حاصل کرنا بے حد ضروری ہے۔
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔9
+                      ہر طالب کے لیے ضروری ہے کہ وہ مطالعہ اور تکرار کے اوقات میں مطالعہ، تکرار کی پابندی کرے، اس سلسلے
+                      میں کو تاہی پر پہلے تنبیہ ہوگی اور اصلاح نہ ہونے کی صورت میں جامعہ سے اخراج کر دیا جائے گا۔
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔10
+                      ہر طالب علم کے لیے ضروری ہے کہ وہ اپنی درس گاہ اور جامعہ کی طرف سے فراہم کردہ کتابوں کی خوب حفاظت
+                      کرے۔
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔11
+                      تکرار اور مطالعہ کی حاضری تکرار اور مطالعہ کے اوقات میں کسی بھی وقت لی جاسکتی ہے، غیر حاضر ہونے
+                      والے طالب علم کے لیے ناظم تعلیمات حسبِ جرم سزا مقرر کریں گے۔
+
+
+                    </p>
+
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔12
+                      عصر کے بعد کھیل یا تفریح کے لیے باہر جانے والے طلبا کا مغرب کی جماعت میں حاضر ہونا لازمی ہے، تاکہ مغرب کے بعد اپنے مطالعہ او رتکرار میں حاضر ہو سکیں۔
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔13
+                     تعلیمی اوقات کے دوران طلباء کا بلا اجازت ناظم دارالاقامہ یا ناظم تعلیمات جامعہ سے باہر جانا ممنوع ہے ۔نیز یہ پابندی مطالعہ اورتکرار کے اوقات میں بھی ہو گی، اس دوران جامعہ کے گیٹ کو مقفل کر دیا جائے گا۔
+
+                    </p>
+
+                    <p class="alignright" style="font-size: 20px; font-weight: 300;">
+
+                      ۔14
+                      تعلیمی اوقات کے دوران کینٹین میں بیٹھ کر وقت ضائع کرنا بھی ممنوع ہے۔ جب کہ مطالعہ او رتکرار کے اوقات میں صرف چائے پینے کے لیے وہاں جانے کی اجازت ہو گی، اخبار بینی اور ریڈیو سننا ممنوع ہو گا۔
+
+                    </p>
+
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container container-footer">
+      <div class="row">
+        <div class="column small-12 medium-4">
+          <div class="footer-primary">
+            <div class="connect">
+              <div class="footer-headline">Connect with UT Austin</div>
+              <div class="newsletter-form">
+                <a href="http://econnect.utexas.edu/utexas-newsletter-signup" class="cta sidebar-cta"><span>Subscribe to
+                    our newsletter</span></a>
+              </div>
+              <ul class="connect-links">
+                <li><a href="http://www.facebook.com/UTAustinTX" class="connect-link"><span class="icon-facebook"><span
+                        class="hiddenText">Facebook</span></span></a></li>
+                <li><a href="http://twitter.com/utaustin" class="connect-link"><span class="icon-twitter"><span
+                        class="hiddenText">Twitter</span></span></a></li>
+                <li><a href="https://instagram.com/utaustintx" class="connect-link"><span class="icon-instagram"><span
+                        class="hiddenText">Instagram</span></span></a></li>
+                <li><a href="https://www.linkedin.com/edu/the-university-of-texas-at-austin-19518"
+                    class="connect-link"><span class="icon-linkedin"><span class="hiddenText">LinkedIn</span></span></a>
+                </li>
+                <li><a href="http://www.youtube.com/utaustintexas" class="connect-link"><span
+                      class="icon-youtube3"><span class="hiddenText">YouTube</span></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column small-12 medium-8">
+          <div class="footer-secondary" role="navigation">
+            <p class="hiddenText">Footer Helpful Links</p>
+            <ul class="helpful-links">
+              <li class="helpful-link-item"><a href="../contact-us.html" class="helpful-link">Contact</a></li>
+              <li class="helpful-link-item"><a href="https://cmhc.utexas.edu/" title="" class="helpful-link">Counseling
+                  and Mental Health</a></li>
+              <li class="helpful-link-item"><a href="https://diversity.utexas.edu/diversity-and-inclusion-action-plan/"
+                  title="" class="helpful-link">Diversity and Inclusion Action Plan</a></li>
+              <li class="helpful-link-item"><a href="https://diversity.utexas.edu/disability-resources/" title=""
+                  class="helpful-link">Diversity, Equity, and Disability Resources ♿</a></li>
+              <li class="helpful-link-item"><a href="http://emergency.utexas.edu/" class="helpful-link">Emergency
+                  Information</a></li>
+              <li class="helpful-link-item"><a href="../fraud-waste-or-abuse.html" title="" class="helpful-link">Fraud,
+                  Waste, or Abuse</a></li>
+              <li class="helpful-link-item"><a href="https://hazing.utexas.edu/" title="" class="helpful-link">Hazing
+                  Prevention and Response</a></li>
+              <li class="helpful-link-item"><a href="../jobs.html" class="helpful-link">Jobs</a></li>
+              <li class="helpful-link-item"><a href="http://www.thecb.state.tx.us/apps/resumes/"
+                  class="helpful-link">Online Institutional Resumes</a></li>
+              <li class="helpful-link-item"><a href="../public-forum.html" title="" class="helpful-link">Public Forum On
+                  Campus</a></li>
+              <li class="helpful-link-item"><a href="../site-policies.html" class="helpful-link">Site
+                  Policies</a></li>
+              <li class="helpful-link-item"><a href="http://www.texas.gov/en/Pages/default.aspx"
+                  class="helpful-link">State of Texas</a></li>
+              <li class="helpful-link-item"><a href="https://www.tsl.texas.gov/trail/index.html"
+                  class="helpful-link">Statewide Search</a></li>
+              <li class="helpful-link-item"><a href="http://gov.texas.gov/" class="helpful-link">Texas
+                  Homeland Security</a></li>
+              <li class="helpful-link-item"><a href="https://veterans.portal.texas.gov/" title=""
+                  class="helpful-link">Texas Veterans Portal</a></li>
+              <li class="helpful-link-item"><a href="https://titleix.utexas.edu/file-a-report/" title=""
+                  class="helpful-link">Title IX Reporting (Sexual Misconduct)</a></li>
+              <li class="helpful-link-item"><a href="http://www.utsystem.edu/" class="helpful-link">UT
+                  System</a></li>
+              <li class="helpful-link-item"><a href="https://it.utexas.edu/policies/web-accessibility" title=""
+                  class="helpful-link">Web Accessibility Policy</a></li>
+              <li class="helpful-link-item"><a href="https://it.utexas.edu/policies/web-privacy" title=""
+                  class="helpful-link">Web Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column small-12">
+          <div class="copyright">&copy; The University of Texas at Austin 2020</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--[if lt IE 9]>
+    <script src="/sites/all/themes/utexas/js/polyfill.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript">
+< !--//-->
+                  < ![CDATA[//><!--
+        window.jQuery || document.write("<script src='../sites/all/modules/custom/utexas_admin/js/replace/backup/jquery.min.js'>\x3C/script>")
+//--><!]]>
+  </script>
+  <script type="text/javascript"
+    src="../sites/default/files/js/js_dWhBODswdXXk1M5Z5nyqNfGljmqwxUwAK9i6D0YSDNs.js"></script>
+  <script type="text/javascript"
+    src="../sites/default/files/js/js_zk6E_FWvKA4Ku6JSXY-F0oYo3Ck75G98FoGpm7ybyds.js"></script>
+  <script type="text/javascript"
+    src="../sites/default/files/js/js_nqYXTQqQmww0EtueD3uTrl3fcUWX07bySQWVCXsoL4k.js"></script>
+  <script type="text/javascript">
+                  < !--//-->
+                  < ![CDATA[//><!--
+                    jQuery.extend(Drupal.settings, { "basePath": "\/", "pathPrefix": "", "ajaxPageState": { "theme": "utexas", "theme_token": "TJ62Ci1XX2krLselka0lwLvKuriI1MNiE-oflpSf0-U", "js": { "https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.10.2\/jquery.min.js": 1, "0": 1, "misc\/jquery-extend-3.4.0.js": 1, "misc\/jquery.once.js": 1, "misc\/drupal.js": 1, "sites\/all\/modules\/custom\/utexas_google_cse\/js\/utexas_google_cse.js": 1, "sites\/all\/themes\/utexas\/js\/custom.accordion.js": 1 }, "css": { "modules\/system\/system.base.css": 1, "modules\/system\/system.menus.css": 1, "modules\/system\/system.messages.css": 1, "modules\/system\/system.theme.css": 1, "sites\/all\/modules\/custom\/features\/content_types\/content_type_contact_info\/content_type_contact_info.css": 1, "sites\/all\/modules\/custom\/features\/content_types\/content_type_twitter_widget\/theme\/twitter-widget.css": 1, "sites\/all\/modules\/contrib\/date\/date_api\/date.css": 1, "sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css": 1, "modules\/field\/theme\/field.css": 1, "sites\/all\/modules\/custom\/localist_integration\/css\/localist.css": 1, "modules\/node\/node.css": 1, "modules\/user\/user.css": 1, "sites\/all\/modules\/custom\/utexas_fonts\/css\/fonts.css": 1, "sites\/all\/modules\/custom\/utexas_google_cse\/css\/utexas_google_cse.css": 1, "sites\/all\/modules\/contrib\/video_filter\/video_filter.css": 1, "sites\/all\/modules\/custom\/features\/views\/views_utexas_localist_widget\/theme\/utexas-localist-widget.css": 1, "sites\/all\/modules\/contrib\/views\/css\/views.css": 1, "sites\/all\/modules\/custom\/utexas_tablesaw_filter\/theme\/utexas_tablesaw_filter.css": 1, "sites\/all\/libraries\/tablesaw\/dist\/stackonly\/tablesaw.stackonly.css": 1, "sites\/all\/themes\/utexas\/css\/base.css": 1, "sites\/all\/themes\/utexas\/css\/core.css": 1, "sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css": 1, "sites\/all\/modules\/contrib\/ctools\/css\/ctools.css": 1, "sites\/all\/modules\/contrib\/context_field\/context_field.css": 1, "sites\/all\/themes\/utexas\/css\/core_pages.css": 1, "sites\/all\/themes\/utexas\/css\/foundation.accordion.css": 1, "sites\/all\/modules\/custom\/utexas_hero_photo\/theme\/utexas_hero_photo.css": 1, "sites\/all\/themes\/utexas\/css\/temporary_css.css": 1, "sites\/all\/themes\/utexas\/css\/custom.accordion.css": 1, "sites\/all\/themes\/utexas\/css\/print.css": 1 } }, "cseId": "006470498568929423894:etsxpcor8wm", "video_filter": { "url": { "ckeditor": "\/video_filter\/dashboard\/ckeditor" }, "instructions_url": "\/video_filter\/instructions", "modulepath": "sites\/all\/modules\/contrib\/video_filter" } });
+//--><!]]>
+  </script>
+  <script type="text/javascript"
+    src="../sites/default/files/js/js_dgTaqxMriwUc2It_FW-X18lJCasw4vEyRMclMPvs1no.js"></script>
+  <script type="text/javascript"
+    src="../sites/default/files/js/js_V7zwacWIuw_lKzjL0zTbLWsjtpOWE912v72LiQSvVeQ.js"></script>
+  <div class="region region-page-bottom">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-W2FKXC" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function (w, d, s, l, i) {
+                      w[l] = w[l] || []; w[l].push({
+                        'gtm.start':
+                          new Date().getTime(), event: 'gtm.js'
+                      }); var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                          '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                    })(window, document, 'script', 'dataLayer', 'GTM-W2FKXC');</script>
+    <!-- End Google Tag Manager -->
+  </div>
+  <script
+    type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "licenseKey": "581f614197", "applicationID": "55667040", "transactionName": "NVBabRdUDRICWkwIWwwaeVoRXAwPTFdXBVE9RVleAGoVCAZO", "queueTime": 0, "applicationTime": 370, "atts": "GRdZG19OHhw=", "errorBeacon": "bam.nr-data.net", "agent": "" }</script>
+</body>
+
+<!-- Mirrored from www.utexas.edu/about/mission-and-values by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Apr 2020 03:47:17 GMT -->
+
+</html>

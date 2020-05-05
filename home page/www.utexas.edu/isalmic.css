@@ -1,0 +1,12 @@
+.allignment{
+    direction: rtl !important;
+    unicode-bidi: bidi-override;
+}
+.aligncentre{
+    text-align: right !important;
+    
+}
+.container-logo{
+    
+
+}

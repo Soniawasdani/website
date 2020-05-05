@@ -1,0 +1,197 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 09 Apr 2020 19:42:17 at https://www.utexas.edu/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.utexas.edu/ -O1 "C:\My Web Sites\Faisal bhai" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:44:07	Warning: 	Moved Permanently for www.utexas.edu/robots.txt
+19:44:07	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/robots.txt and https://www.utexas.edu/robots.txt
+19:44:07	Warning: 	Warning moved treated for www.utexas.edu/robots.txt (real one is https://www.utexas.edu/robots.txt)
+19:44:07	Warning: 	Moved Permanently for www.utexas.edu/directory/
+19:44:07	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/directory/ and https://www.utexas.edu/directory/
+19:44:07	Warning: 	File has moved from www.utexas.edu/directory/ to https://www.utexas.edu/directory/
+19:47:13	Error: 	"Bad Request" (400) at link www.googletagmanager.com/gtm.js?id= (from https://www.utexas.edu/)
+19:47:13	Error: 	"Not Found" (404) at link https://www.utexas.edu/sites/all/themes/utexas/fonts/librefrank/librefranklin-black.ttf (from https://www.utexas.edu/sites/default/files/css/css_vEGuwuitUE1Ojmq5p1pQOmn103CJanFWDySQW-yS2bM.css)
+19:47:14	Warning: 	Moved Permanently for www.utexas.edu/tuition/
+19:47:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/tuition/ and https://www.utexas.edu/tuition/
+19:47:14	Warning: 	File has moved from www.utexas.edu/tuition/ to https://www.utexas.edu/tuition/
+19:47:14	Warning: 	Moved Permanently for www.utexas.edu/police/
+19:47:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/police/ and https://www.utexas.edu/police/
+19:47:14	Warning: 	File has moved from www.utexas.edu/police/ to https://www.utexas.edu/police/
+19:47:14	Warning: 	Moved Permanently for www.utexas.edu/childcenter/
+19:47:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/childcenter/ and https://www.utexas.edu/childcenter/
+19:47:14	Warning: 	File has moved from www.utexas.edu/childcenter/ to https://www.utexas.edu/childcenter/
+19:47:14	Warning: 	Moved Permanently for www.utexas.edu/parking/
+19:47:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/parking/ and https://www.utexas.edu/parking/
+19:47:14	Warning: 	File has moved from www.utexas.edu/parking/ to https://www.utexas.edu/parking/
+19:47:14	Warning: 	Moved Permanently for www.utexas.edu/tsm/
+19:47:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/tsm/ and https://www.utexas.edu/tsm/
+19:47:14	Warning: 	File has moved from www.utexas.edu/tsm/ to https://www.utexas.edu/tsm/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/faculty/council/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/faculty/council/ and https://www.utexas.edu/faculty/council/
+19:47:15	Warning: 	File has moved from www.utexas.edu/faculty/council/ to https://www.utexas.edu/faculty/council/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/faculty/council/ombuds/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/faculty/council/ombuds/ and https://www.utexas.edu/faculty/council/ombuds/
+19:47:15	Warning: 	File has moved from www.utexas.edu/faculty/council/ombuds/ to https://www.utexas.edu/faculty/council/ombuds/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/staff/council/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/staff/council/ and https://www.utexas.edu/staff/council/
+19:47:15	Warning: 	File has moved from www.utexas.edu/staff/council/ to https://www.utexas.edu/staff/council/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/careersmart/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/careersmart/ and https://www.utexas.edu/careersmart/
+19:47:15	Warning: 	File has moved from www.utexas.edu/careersmart/ to https://www.utexas.edu/careersmart/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/hr/current/services/dispute/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/hr/current/services/dispute/ and https://www.utexas.edu/hr/current/services/dispute/
+19:47:15	Warning: 	File has moved from www.utexas.edu/hr/current/services/dispute/ to https://www.utexas.edu/hr/current/services/dispute/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/hr/current/leave/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/hr/current/leave/ and https://www.utexas.edu/hr/current/leave/
+19:47:15	Warning: 	File has moved from www.utexas.edu/hr/current/leave/ to https://www.utexas.edu/hr/current/leave/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/hr/current/new/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/hr/current/new/ and https://www.utexas.edu/hr/current/new/
+19:47:15	Warning: 	File has moved from www.utexas.edu/hr/current/new/ to https://www.utexas.edu/hr/current/new/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/staff/aaafsa/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/staff/aaafsa/ and https://www.utexas.edu/staff/aaafsa/
+19:47:15	Warning: 	File has moved from www.utexas.edu/staff/aaafsa/ to https://www.utexas.edu/staff/aaafsa/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/staff/hfsa/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/staff/hfsa/ and https://www.utexas.edu/staff/hfsa/
+19:47:15	Warning: 	File has moved from www.utexas.edu/staff/hfsa/ to https://www.utexas.edu/staff/hfsa/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/staff/pefsa/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/staff/pefsa/ and https://www.utexas.edu/staff/pefsa/
+19:47:15	Warning: 	File has moved from www.utexas.edu/staff/pefsa/ to https://www.utexas.edu/staff/pefsa/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/cio/policies/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/cio/policies/ and https://www.utexas.edu/cio/policies/
+19:47:15	Warning: 	File has moved from www.utexas.edu/cio/policies/ to https://www.utexas.edu/cio/policies/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/research/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/research/ and https://www.utexas.edu/research/
+19:47:15	Warning: 	File has moved from www.utexas.edu/research/ to https://www.utexas.edu/research/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/compliance/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/compliance/ and https://www.utexas.edu/compliance/
+19:47:15	Warning: 	File has moved from www.utexas.edu/compliance/ to https://www.utexas.edu/compliance/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/payroll/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/payroll/ and https://www.utexas.edu/payroll/
+19:47:15	Warning: 	File has moved from www.utexas.edu/payroll/ to https://www.utexas.edu/payroll/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/facilities/FSC/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/facilities/FSC/ and https://www.utexas.edu/facilities/FSC/
+19:47:15	Warning: 	File has moved from www.utexas.edu/facilities/FSC/ to https://www.utexas.edu/facilities/FSC/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/hr/current/services/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/hr/current/services/ and https://www.utexas.edu/hr/current/services/
+19:47:15	Warning: 	File has moved from www.utexas.edu/hr/current/services/ to https://www.utexas.edu/hr/current/services/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/ogs/alumni/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/ogs/alumni/ and https://www.utexas.edu/ogs/alumni/
+19:47:15	Warning: 	File has moved from www.utexas.edu/ogs/alumni/ to https://www.utexas.edu/ogs/alumni/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/parking/parking/visitor/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/parking/parking/visitor/ and https://www.utexas.edu/parking/parking/visitor/
+19:47:15	Warning: 	File has moved from www.utexas.edu/parking/parking/visitor/ to https://www.utexas.edu/parking/parking/visitor/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/parking/bike/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/parking/bike/ and https://www.utexas.edu/parking/bike/
+19:47:15	Warning: 	File has moved from www.utexas.edu/parking/bike/ to https://www.utexas.edu/parking/bike/
+19:47:15	Warning: 	Moved Permanently for www.utexas.edu/parking/transportation/walking/
+19:47:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/parking/transportation/walking/ and https://www.utexas.edu/parking/transportation/walking/
+19:47:15	Warning: 	File has moved from www.utexas.edu/parking/transportation/walking/ to https://www.utexas.edu/parking/transportation/walking/
+19:48:13	Warning: 	Moved Permanently for www.utexas.edu/cola/progs/plan2/
+19:48:13	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/cola/progs/plan2/ and https://www.utexas.edu/cola/progs/plan2/
+19:48:13	Warning: 	File has moved from www.utexas.edu/cola/progs/plan2/ to https://www.utexas.edu/cola/progs/plan2/
+19:48:13	Warning: 	Moved Permanently for www.utexas.edu/ogs/
+19:48:13	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/ogs/ and https://www.utexas.edu/ogs/
+19:48:13	Warning: 	File has moved from www.utexas.edu/ogs/ to https://www.utexas.edu/ogs/
+19:48:13	Warning: 	Moved Permanently for www.utexas.edu/academic/mcw/program/
+19:48:13	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/academic/mcw/program/ and https://www.utexas.edu/academic/mcw/program/
+19:48:13	Warning: 	File has moved from www.utexas.edu/academic/mcw/program/ to https://www.utexas.edu/academic/mcw/program/
+19:48:13	Warning: 	Moved Permanently for www.utexas.edu/cola/
+19:48:13	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/cola/ and https://www.utexas.edu/cola/
+19:48:13	Warning: 	File has moved from www.utexas.edu/cola/ to https://www.utexas.edu/cola/
+19:48:13	Warning: 	Moved Permanently for www.utexas.edu/pharmacy/
+19:48:13	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/pharmacy/ and https://www.utexas.edu/pharmacy/
+19:48:13	Warning: 	File has moved from www.utexas.edu/pharmacy/ to https://www.utexas.edu/pharmacy/
+19:48:13	Warning: 	Moved Permanently for www.utexas.edu/lbj/
+19:48:13	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/lbj/ and https://www.utexas.edu/lbj/
+19:48:13	Warning: 	File has moved from www.utexas.edu/lbj/ to https://www.utexas.edu/lbj/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/ugs/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/ugs/ and https://www.utexas.edu/ugs/
+19:48:14	Warning: 	File has moved from www.utexas.edu/ugs/ to https://www.utexas.edu/ugs/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/academic/mcw/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/academic/mcw/ and https://www.utexas.edu/academic/mcw/
+19:48:14	Warning: 	File has moved from www.utexas.edu/academic/mcw/ to https://www.utexas.edu/academic/mcw/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/cola/uteach/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/cola/uteach/ and https://www.utexas.edu/cola/uteach/
+19:48:14	Warning: 	File has moved from www.utexas.edu/cola/uteach/ to https://www.utexas.edu/cola/uteach/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/cola/progs/winedale/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/cola/progs/winedale/ and https://www.utexas.edu/cola/progs/winedale/
+19:48:14	Warning: 	File has moved from www.utexas.edu/cola/progs/winedale/ to https://www.utexas.edu/cola/progs/winedale/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/tmm/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/tmm/ and https://www.utexas.edu/tmm/
+19:48:14	Warning: 	File has moved from www.utexas.edu/tmm/ to https://www.utexas.edu/tmm/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/tower/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/tower/ and https://www.utexas.edu/tower/
+19:48:14	Warning: 	File has moved from www.utexas.edu/tower/ to https://www.utexas.edu/tower/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/hr/current/insurance/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/hr/current/insurance/ and https://www.utexas.edu/hr/current/insurance/
+19:48:14	Warning: 	File has moved from www.utexas.edu/hr/current/insurance/ to https://www.utexas.edu/hr/current/insurance/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/hr/eap/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/hr/eap/ and https://www.utexas.edu/hr/eap/
+19:48:14	Warning: 	File has moved from www.utexas.edu/hr/eap/ to https://www.utexas.edu/hr/eap/
+19:48:14	Warning: 	Link https://www.utexas.edu/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/safety/bcal/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/safety/bcal/ and https://www.utexas.edu/safety/bcal/
+19:48:14	Warning: 	File has moved from www.utexas.edu/safety/bcal/ to https://www.utexas.edu/safety/bcal/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/diversity/campus-culture/campus-climate-response-team/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/diversity/campus-culture/campus-climate-response-team/ and https://www.utexas.edu/diversity/campus-culture/campus-climate-response-team/
+19:48:14	Warning: 	File has moved from www.utexas.edu/diversity/campus-culture/campus-climate-response-team/ to https://www.utexas.edu/diversity/campus-culture/campus-climate-response-team/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/safety/preparedness/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/safety/preparedness/ and https://www.utexas.edu/safety/preparedness/
+19:48:14	Warning: 	File has moved from www.utexas.edu/safety/preparedness/ to https://www.utexas.edu/safety/preparedness/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/safety/ehs/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/safety/ehs/ and https://www.utexas.edu/safety/ehs/
+19:48:14	Warning: 	File has moved from www.utexas.edu/safety/ehs/ to https://www.utexas.edu/safety/ehs/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/safety/fire/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/safety/fire/ and https://www.utexas.edu/safety/fire/
+19:48:14	Warning: 	File has moved from www.utexas.edu/safety/fire/ to https://www.utexas.edu/safety/fire/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/universityunions/events-and-entertainment/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/universityunions/events-and-entertainment/ and https://www.utexas.edu/universityunions/events-and-entertainment/
+19:48:14	Warning: 	File has moved from www.utexas.edu/universityunions/events-and-entertainment/ to https://www.utexas.edu/universityunions/events-and-entertainment/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/research/eureka/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/research/eureka/ and https://www.utexas.edu/research/eureka/
+19:48:14	Warning: 	File has moved from www.utexas.edu/research/eureka/ to https://www.utexas.edu/research/eureka/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/ogs/research/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/ogs/research/ and https://www.utexas.edu/ogs/research/
+19:48:14	Warning: 	File has moved from www.utexas.edu/ogs/research/ to https://www.utexas.edu/ogs/research/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/cola/offices/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/cola/offices/ and https://www.utexas.edu/cola/offices/
+19:48:14	Warning: 	File has moved from www.utexas.edu/cola/offices/ to https://www.utexas.edu/cola/offices/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/law/centers/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/law/centers/ and https://www.utexas.edu/law/centers/
+19:48:14	Warning: 	File has moved from www.utexas.edu/law/centers/ to https://www.utexas.edu/law/centers/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/ssw/cswr/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/ssw/cswr/ and https://www.utexas.edu/ssw/cswr/
+19:48:14	Warning: 	File has moved from www.utexas.edu/ssw/cswr/ to https://www.utexas.edu/ssw/cswr/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/cola/insts/ica/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/cola/insts/ica/ and https://www.utexas.edu/cola/insts/ica/
+19:48:14	Warning: 	File has moved from www.utexas.edu/cola/insts/ica/ to https://www.utexas.edu/cola/insts/ica/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/cola/orgs/tarl/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/cola/orgs/tarl/ and https://www.utexas.edu/cola/orgs/tarl/
+19:48:14	Warning: 	File has moved from www.utexas.edu/cola/orgs/tarl/ to https://www.utexas.edu/cola/orgs/tarl/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/research/cem/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/research/cem/ and https://www.utexas.edu/research/cem/
+19:48:14	Warning: 	File has moved from www.utexas.edu/research/cem/ to https://www.utexas.edu/research/cem/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/research/ceer/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/research/ceer/ and https://www.utexas.edu/research/ceer/
+19:48:14	Warning: 	File has moved from www.utexas.edu/research/ceer/ to https://www.utexas.edu/research/ceer/
+19:48:14	Warning: 	Moved Permanently for www.utexas.edu/emergency/
+19:48:14	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/emergency/ and https://www.utexas.edu/emergency/
+19:48:14	Warning: 	File has moved from www.utexas.edu/emergency/ to https://www.utexas.edu/emergency/
+19:48:15	Warning: 	Moved Permanently for www.utexas.edu/hr/current/retirement/
+19:48:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/hr/current/retirement/ and https://www.utexas.edu/hr/current/retirement/
+19:48:15	Warning: 	File has moved from www.utexas.edu/hr/current/retirement/ to https://www.utexas.edu/hr/current/retirement/
+19:48:15	Warning: 	Moved Permanently for www.utexas.edu/cio/
+19:48:15	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/cio/ and https://www.utexas.edu/cio/
+19:48:15	Warning: 	File has moved from www.utexas.edu/cio/ to https://www.utexas.edu/cio/
+19:48:16	Warning: 	Moved Permanently for www.utexas.edu/trademarks/
+19:48:16	Warning: 	Redirected link is identical because of 'URL Hack' option: www.utexas.edu/trademarks/ and https://www.utexas.edu/trademarks/
+19:48:16	Warning: 	File has moved from www.utexas.edu/trademarks/ to https://www.utexas.edu/trademarks/
+19:48:16	Warning: 	Moved Permanently for https://www.utexas.edu/has_js=1; path=/
+19:48:16	Warning: 	File has moved from https://www.utexas.edu/has_js=1; path=/ to https://www.utexas.edu/has_js%3D1%3B%20path%3D
+19:48:16	Error: 	"Error when decompressing" (-1) at link https://www.utexas.edu/has_js%3D1%3B path%3D (from https://www.utexas.edu/has_js=1; path=/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 5 minutes 59 seconds : 532 links scanned, 467 files written (41722030 bytes overall) [38732542 bytes received at 107890 bytes/sec], 4875049 bytes transferred using HTTP compression in 108 files, ratio 27%, 12.0 requests per connection
+(3 errors, 183 warnings, 0 messages)

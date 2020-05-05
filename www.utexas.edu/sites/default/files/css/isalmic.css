@@ -1,0 +1,16 @@
+.allignment{
+    direction: rtl !important;
+    unicode-bidi: bidi-override;
+}
+.alignright{
+    text-align: right !important;
+   font-weight: normal !important;
+   font-size: 25px;
+    
+}
+.aligncentre{
+    text-align:center;
+}
+ .fontsize30{
+     font-size: 30px;
+ }

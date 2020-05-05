@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: "IslamicFont";
+    src: url("fonts/PDMS_ISLAMICFONT.ttf");
+}
+*{
+    font-family: IslamicFont !important;
+
+}
